@@ -7,7 +7,7 @@ set SSH_AUTH_SOCK /tmp/ssh-XXXXXXfxf9XP/agent.35422
   alias la "eza -a --icons"
 
   # Nixos rebuild
-  alias ntfy-rebuild "sudo nixos-rebuild switch --flake /etc/nixos/#default && curl -d \"✅ Nix rebuild done\" ntfy.sh/NixOS_alerts || curl -d \"⚠️ Nix rebuild failed!\""
+  alias ntfy-rebuild "sudo nixos-rebuild switch --flake /etc/nixos/#default && curl -d \"✅ Nix rebuild done\" ntfy.sh/NixOS_alerts || curl -d \"⚠️ Nix rebuild failed!\" ntfy.sh/NixOS_alerts"
 
   # Bat cat
   alias cat "bat --color=always"
