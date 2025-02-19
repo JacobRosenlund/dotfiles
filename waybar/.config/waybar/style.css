@@ -109,6 +109,10 @@ button:hover {
     border-bottom: 2px solid @green;
 }
 
+#bluetooth {
+  margin-right: 5px;
+}
+
 /* If workspaces is the leftmost module, omit left margin */
 .modules-left>widget:first-child>#workspaces {
     margin-left: 0;
