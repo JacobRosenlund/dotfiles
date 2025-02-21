@@ -12,5 +12,5 @@ set SSH_AUTH_SOCK /tmp/ssh-XXXXXXfxf9XP/agent.35422
   # Bat cat
   alias cat "bat --color=always"
 
-# FZF Tab-complete
-fzf_configure_bindings --directory=\t --variables=\e\cv
+# Enable zoxide
+zoxide init fish | source
