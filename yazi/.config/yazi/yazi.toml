@@ -1,3 +1,15 @@
 # yazi.toml
-[manager]
+[mgr]
 show_hidden = true
+
+[[plugin.prepend_previewers]]
+name = "*.tar*"
+run = 'piper --format=url -- tar tf "$1"'
+
+[[plugin.prepend_previewers]]
+name = "*.md"
+run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"'
+
+[[plugin.append_previewers]]
+name = "*"
+run = 'piper -- hexyl --border=none --terminal-width=$w "$1"'

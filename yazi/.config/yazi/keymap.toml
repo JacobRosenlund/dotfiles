@@ -1,0 +1,10 @@
+# Toggle Pane
+[[mgr.prepend_keymap]]
+on = "T"
+run = "plugin toggle-pane max-preview"
+desc = "Maximize or restor the preview pane"
+
+# Mount
+[[mgr.prepend_keymap]]
+on = "M"
+run = "plugin mount"

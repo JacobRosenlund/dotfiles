@@ -1,0 +1,22 @@
+[[plugin.deps]]
+use = "yazi-rs/plugins:piper"
+rev = "aeca767"
+hash = "2bdc137505b8d9a0cc867a57d0e99b01"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:smart-enter"
+rev = "aeca767"
+hash = "a7ab702e1ef0c097defbc976ed34c186"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:toggle-pane"
+rev = "aeca767"
+hash = "d5d4f3527592da5fbe77fd6f51815f80"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:mount"
+rev = "aeca767"
+hash = "277ba273e5d3d647feb5808d0fe4e4e0"
+
+[flavor]
+deps = []
