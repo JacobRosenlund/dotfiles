@@ -1,0 +1,20 @@
+{
+  "disabled_plugins": {
+    "__class__": "set",
+    "__value__": []
+  },
+  "enabled_plugins": {
+    "__class__": "set",
+    "__value__": []
+  },
+  "filetype_mapping": {},
+  "plugin_customization": {},
+  "plugins": {
+    "Annotations": "/home/jacobr/.config/calibre/plugins/Annotations.zip",
+    "Count Pages": "/home/jacobr/.config/calibre/plugins/Count Pages.zip",
+    "Job Spy": "/home/jacobr/.config/calibre/plugins/Job Spy.zip",
+    "Reading List": "/home/jacobr/.config/calibre/plugins/Reading List.zip",
+    "Save Virtual Libraries To Column GUI": "/home/jacobr/.config/calibre/plugins/Save Virtual Libraries To Column GUI.zip",
+    "View Manager": "/home/jacobr/.config/calibre/plugins/View Manager.zip"
+  }
+}

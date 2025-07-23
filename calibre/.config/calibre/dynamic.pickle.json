@@ -7,6 +7,10 @@
   "save to disk dialog": "/home/jacobr/Backups/Kindle",
   "sort_history": [
     [
+      "marked",
+      true
+    ],
+    [
       "timestamp",
       false
     ],
