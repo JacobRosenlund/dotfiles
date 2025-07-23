@@ -1,0 +1,43 @@
+@define-color background rgba(15,27,53,0.7);
+@define-color hover rgba(70, 75, 90, 0.9);
+@define-color active rgba(97, 175, 239, 0.9);
+
+.helm {
+  background-color: @background;
+  border-radius: 16px;
+}
+
+.audio {
+  font-family: "CaskaydiaCove Nerd Font Mono";
+  background-color: transparent;
+}
+
+.network {
+  background-color: @background;
+  border-radius: 16px;
+}
+
+.network_connect {
+  margin-top: 16px;
+}
+
+.active_network {
+  background-color: @active;
+}
+
+.unknown_network {
+  color: @hover;
+}
+
+button {
+  background-color: transparent;
+  border-width: 1px;
+  border-color: @hover;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+button:hover {
+  background-color: @hover;
+}
+

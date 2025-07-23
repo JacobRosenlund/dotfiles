@@ -1,0 +1,35 @@
+(defpoll network_content :interval "5s" :initial "" `python ./scripts/network.py`)
+
+(defwindow helm
+  :monitor 0
+  :stacking "fg"
+  :windowtype "dock"
+  :exclusive false
+  :focusable "none"
+  :geometry (geometry :x "4px" :width "30%" :height "95%")
+  "test"
+)
+
+(defwindow network
+  :monitor 0
+  :stacking "fg"
+  :geometry (geometry :x "4px" :y "0px" :width "400px" :height "180px" :anchor "top right")
+  (eventbox :onhoverlost "eww close network"
+    (network_connect)
+  )
+)
+
+(defwidget network_connect []
+  (box :class "network_connect"
+    (literal :content {network_content})
+  )
+)
+
+; (deflisten cava :initial "" `cava -p ./cava.conf | ./CavaRawBarWrapper/build/cavawrapper`)
+
+; (defwidget parent []
+;   (box :class "audio"
+;     :valign "end"
+;     "${replace(cava, ";", "
+; ")}")
+; )
