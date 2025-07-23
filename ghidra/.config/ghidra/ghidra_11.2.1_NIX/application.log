@@ -1,0 +1,188 @@
+2025-02-21 17:55:30 INFO  (LoggingInitialization) Using log config file: jar:file:/nix/store/bxrbnaffmcmcm49a931djnqzljk0ifaj-ghidra-11.2.1/lib/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2025-02-21 17:55:30 INFO  (LoggingInitialization) Using log file: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX/application.log  
+2025-02-21 17:55:31 INFO  (Preferences) Loading user preferences: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX/preferences  
+2025-02-21 17:55:35 INFO  (ClassSearcher) Searching for classes...  
+2025-02-21 17:55:37 INFO  (ClassSearcher) Class search complete (2442 ms)  
+2025-02-21 17:55:38 INFO  (SSLContextInitializer) Initializing SSL Context  
+2025-02-21 17:55:38 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2025-02-21 17:55:38 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2025-02-21 17:55:38 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2025-02-21 17:55:38 INFO  (GhidraRun) User jacobr started Ghidra.  
+2025-02-21 17:55:38 INFO  (GhidraRun) User settings directory: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX  
+2025-02-21 17:55:38 INFO  (GhidraRun) User temp directory: /tmp/jacobr-ghidra  
+2025-02-21 17:55:38 INFO  (GhidraRun) User cache directory: /var/tmp/jacobr-ghidra  
+2025-02-21 17:55:38 DEBUG (DefaultProjectManager) No tools found; Installing default tools  
+2025-02-21 17:55:38 DEBUG (DefaultProjectManager) 	no recent project directories found  
+2025-02-21 17:55:40 DEBUG (RecoverySnapshotMgrPlugin) Recovery snapshot timer set to 5 minute(s)  
+2025-02-21 17:55:41 INFO  (GhidraRun) Ghidra startup complete (11968 ms)  
+2025-02-21 17:55:56 INFO  (LoggingInitialization) Using log config file: jar:file:/nix/store/bxrbnaffmcmcm49a931djnqzljk0ifaj-ghidra-11.2.1/lib/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2025-02-21 17:55:56 INFO  (LoggingInitialization) Using log file: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX/application.log  
+2025-02-21 17:55:56 INFO  (Preferences) Loading user preferences: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX/preferences  
+2025-02-21 17:55:56 INFO  (ClassSearcher) Searching for classes...  
+2025-02-21 17:55:59 INFO  (ClassSearcher) Class search complete (2292 ms)  
+2025-02-21 17:55:59 INFO  (SSLContextInitializer) Initializing SSL Context  
+2025-02-21 17:55:59 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2025-02-21 17:55:59 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2025-02-21 17:55:59 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2025-02-21 17:55:59 INFO  (GhidraRun) User jacobr started Ghidra.  
+2025-02-21 17:55:59 INFO  (GhidraRun) User settings directory: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX  
+2025-02-21 17:55:59 INFO  (GhidraRun) User temp directory: /tmp/jacobr-ghidra  
+2025-02-21 17:55:59 INFO  (GhidraRun) User cache directory: /var/tmp/jacobr-ghidra  
+2025-02-21 17:56:01 DEBUG (RecoverySnapshotMgrPlugin) Recovery snapshot timer set to 5 minute(s)  
+2025-02-21 17:56:01 INFO  (GhidraRun) Ghidra startup complete (6513 ms)  
+2025-02-21 17:56:15 INFO  (DefaultProject) Creating project: /home/jacobr/test  
+2025-02-21 17:56:43 INFO  (LoggingInitialization) Using log config file: jar:file:/nix/store/bxrbnaffmcmcm49a931djnqzljk0ifaj-ghidra-11.2.1/lib/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2025-02-21 17:56:43 INFO  (LoggingInitialization) Using log file: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX/application.log  
+2025-02-21 17:56:43 INFO  (Preferences) Loading user preferences: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX/preferences  
+2025-02-21 17:56:44 INFO  (ClassSearcher) Searching for classes...  
+2025-02-21 17:56:46 INFO  (ClassSearcher) Class search complete (2194 ms)  
+2025-02-21 17:56:46 INFO  (SSLContextInitializer) Initializing SSL Context  
+2025-02-21 17:56:46 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2025-02-21 17:56:46 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2025-02-21 17:56:46 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2025-02-21 17:56:46 INFO  (GhidraRun) User jacobr started Ghidra.  
+2025-02-21 17:56:46 INFO  (GhidraRun) User settings directory: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX  
+2025-02-21 17:56:46 INFO  (GhidraRun) User temp directory: /tmp/jacobr-ghidra  
+2025-02-21 17:56:46 INFO  (GhidraRun) User cache directory: /var/tmp/jacobr-ghidra  
+2025-02-21 17:56:48 DEBUG (RecoverySnapshotMgrPlugin) Recovery snapshot timer set to 5 minute(s)  
+2025-02-21 17:56:48 INFO  (DefaultProject) Opening project: /home/jacobr/test  
+2025-02-21 17:56:54 INFO  (GhidraRun) Ghidra startup complete (11994 ms)  
+2025-02-21 17:59:30 INFO  (LoggingInitialization) Using log config file: jar:file:/nix/store/bxrbnaffmcmcm49a931djnqzljk0ifaj-ghidra-11.2.1/lib/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2025-02-21 17:59:30 INFO  (LoggingInitialization) Using log file: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX/application.log  
+2025-02-21 17:59:30 INFO  (Preferences) Loading user preferences: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX/preferences  
+2025-02-21 17:59:30 INFO  (ClassSearcher) Searching for classes...  
+2025-02-21 17:59:32 INFO  (ClassSearcher) Class search complete (2183 ms)  
+2025-02-21 17:59:33 INFO  (SSLContextInitializer) Initializing SSL Context  
+2025-02-21 17:59:33 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2025-02-21 17:59:33 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2025-02-21 17:59:33 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2025-02-21 17:59:33 INFO  (GhidraRun) User jacobr started Ghidra.  
+2025-02-21 17:59:33 INFO  (GhidraRun) User settings directory: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX  
+2025-02-21 17:59:33 INFO  (GhidraRun) User temp directory: /tmp/jacobr-ghidra  
+2025-02-21 17:59:33 INFO  (GhidraRun) User cache directory: /var/tmp/jacobr-ghidra  
+2025-02-21 17:59:35 DEBUG (RecoverySnapshotMgrPlugin) Recovery snapshot timer set to 5 minute(s)  
+2025-02-21 17:59:35 INFO  (GhidraRun) Invalid Project: The specified file is not a project file: --version  
+2025-02-21 17:59:39 INFO  (DefaultProject) Opening project: /home/jacobr/test  
+2025-02-21 17:59:39 INFO  (GhidraRun) Ghidra startup complete (10419 ms)  
+2025-02-21 20:43:15 INFO  (LoggingInitialization) Using log config file: jar:file:/nix/store/bxrbnaffmcmcm49a931djnqzljk0ifaj-ghidra-11.2.1/lib/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2025-02-21 20:43:15 INFO  (LoggingInitialization) Using log file: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX/application.log  
+2025-02-21 20:43:16 INFO  (Preferences) Loading user preferences: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX/preferences  
+2025-02-21 20:43:16 INFO  (ClassSearcher) Searching for classes...  
+2025-02-21 20:43:18 INFO  (ClassSearcher) Class search complete (2164 ms)  
+2025-02-21 20:43:18 INFO  (SSLContextInitializer) Initializing SSL Context  
+2025-02-21 20:43:18 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2025-02-21 20:43:18 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2025-02-21 20:43:18 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2025-02-21 20:43:18 INFO  (GhidraRun) User jacobr started Ghidra.  
+2025-02-21 20:43:18 INFO  (GhidraRun) User settings directory: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX  
+2025-02-21 20:43:18 INFO  (GhidraRun) User temp directory: /tmp/jacobr-ghidra  
+2025-02-21 20:43:18 INFO  (GhidraRun) User cache directory: /var/tmp/jacobr-ghidra  
+2025-02-21 20:43:20 DEBUG (RecoverySnapshotMgrPlugin) Recovery snapshot timer set to 5 minute(s)  
+2025-02-21 20:43:20 INFO  (DefaultProject) Opening project: /home/jacobr/test  
+2025-02-21 20:43:21 INFO  (GhidraRun) Ghidra startup complete (6867 ms)  
+2025-02-28 14:24:59 INFO  (LoggingInitialization) Using log config file: jar:file:/nix/store/bxrbnaffmcmcm49a931djnqzljk0ifaj-ghidra-11.2.1/lib/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2025-02-28 14:24:59 INFO  (LoggingInitialization) Using log file: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX/application.log  
+2025-02-28 14:25:00 INFO  (Preferences) Loading user preferences: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX/preferences  
+2025-02-28 14:25:00 INFO  (ClassSearcher) Searching for classes...  
+2025-02-28 14:25:03 INFO  (ClassSearcher) Class search complete (2930 ms)  
+2025-02-28 14:25:03 INFO  (SSLContextInitializer) Initializing SSL Context  
+2025-02-28 14:25:03 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2025-02-28 14:25:03 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2025-02-28 14:25:03 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2025-02-28 14:25:03 INFO  (GhidraRun) User jacobr started Ghidra.  
+2025-02-28 14:25:03 INFO  (GhidraRun) User settings directory: /home/jacobr/.config/ghidra/ghidra_11.2.1_NIX  
+2025-02-28 14:25:03 INFO  (GhidraRun) User temp directory: /tmp/jacobr-ghidra  
+2025-02-28 14:25:03 INFO  (GhidraRun) User cache directory: /var/tmp/jacobr-ghidra  
+2025-02-28 14:25:06 DEBUG (RecoverySnapshotMgrPlugin) Recovery snapshot timer set to 5 minute(s)  
+2025-02-28 14:25:06 INFO  (DefaultProject) Opening project: /home/jacobr/test  
+2025-02-28 14:25:07 INFO  (GhidraRun) Ghidra startup complete (9374 ms)  
+2025-02-28 14:27:20 INFO  (FileActionManager) Closed project: test  
+2025-02-28 14:27:20 INFO  (DefaultProject) Creating project: /home/jacobr/Code/rev-engineering/babys-first  
+2025-02-28 14:28:49 INFO  (FileCacheMaintenanceDaemon) Starting cache cleanup: /var/tmp/jacobr-ghidra/fscache2  
+2025-02-28 14:28:49 INFO  (FileCacheMaintenanceDaemon) Finished cache cleanup, estimated storage used: 0  
+2025-02-28 14:28:49 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2025-02-28 14:28:49 DEBUG (ElfHeader) Elf relocation table section .rela.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2025-02-28 14:28:49 DEBUG (ElfHeader) Elf relocation table section .rela.plt linked to symbol table section .dynsym affecting .got  
+2025-02-28 14:29:00 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2025-02-28 14:29:00 DEBUG (ElfHeader) Elf relocation table section .rela.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2025-02-28 14:29:00 DEBUG (ElfHeader) Elf relocation table section .rela.plt linked to symbol table section .dynsym affecting .got  
+2025-02-28 14:29:00 DEBUG (ElfProgramBuilder) Discarding 3-byte alignment/filler segment_4.2 at 0010205d  
+2025-02-28 14:29:00 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_4.4 at 001020ac  
+2025-02-28 14:29:00 DEBUG (ElfProgramBuilder) Discarding 5-byte alignment/filler segment_3.2 at 0010101b  
+2025-02-28 14:29:00 DEBUG (ElfProgramBuilder) Discarding 3-byte alignment/filler segment_3.7 at 001013b5  
+2025-02-28 14:29:00 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_2.3 at 00100334  
+2025-02-28 14:29:00 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_2.7 at 0010039c  
+2025-02-28 14:29:00 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_2.9 at 001003c4  
+2025-02-28 14:29:00 DEBUG (ElfProgramBuilder) Discarding 1-byte alignment/filler segment_2.12 at 00100575  
+2025-02-28 14:29:00 DEBUG (ElfProgramBuilder) Discarding 6-byte alignment/filler segment_2.14 at 0010058a  
+2025-02-28 14:29:20 INFO  (ImporterUtilities) Additional info:
+Loading file:///home/jacobr/Code/rev-engineering/babys-first-crackme/babys-first?MD5=3ab98142d96589bf336ef34e380dd416...
+Setting block .init_array to read-only
+Setting block .fini_array to read-only
+Setting block .dynamic to read-only
+Failed to markup ELF Note at 00100338: data conflict
+Failed to markup ELF Note at 00100358: data conflict
+Failed to markup ELF Note at 0010037c: data conflict
+------------------------------------------------
+
+Linking the External Programs of 'babys-first' to imported libraries...
+  [libc.so.6] -> not found in project
+------------------------------------------------
+
+Resolving External Symbols of [/babys-first] - 6 unresolved symbols, no external libraries configured - skipping
+  
+2025-02-28 14:31:11 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2025-02-28 14:31:11 DEBUG (ElfHeader) Elf relocation table section .rela.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2025-02-28 14:31:11 DEBUG (ElfHeader) Elf relocation table section .rela.plt linked to symbol table section .dynsym affecting .got  
+2025-02-28 14:31:36 DEBUG (ToolTaskManager) Background processing started...  
+2025-02-28 14:31:36 DEBUG (ToolTaskManager) Task Start: Auto Analysis  
+2025-02-28 14:31:36 INFO  (ExternalDebugFileSectionProvider) DWARF external debug information found: ExternalDebugInfo [filename=null, crc=0, hash=3bd7cac60bde476b0ef818fbf868261cb4595364]  
+2025-02-28 14:31:36 INFO  (DWARFAnalyzer) Unable to find DWARF information, skipping DWARF analysis  
+2025-02-28 14:31:36 INFO  (DecompilerSwitchAnalyzer) hit non-returning function, restarting decompiler switch analyzer later  
+2025-02-28 14:31:37 WARN  (DecompileCallback) Decompiling 00101120, pcode error at 00105038: Unable to disassemble EXTERNAL block location: 00105038  
+2025-02-28 14:31:37 WARN  (DecompileCallback) Decompiling 001010f0, pcode error at 00105000: Unable to disassemble EXTERNAL block location: 00105000  
+2025-02-28 14:31:38 INFO  (PackedDatabaseCache) Packed database cache: /var/tmp/jacobr-ghidra/packed-db-cache  
+2025-02-28 14:31:38 DEBUG (PackedDatabaseCache) Caching packed database: /nix/store/bxrbnaffmcmcm49a931djnqzljk0ifaj-ghidra-11.2.1/lib/ghidra/Ghidra/Features/Base/data/typeinfo/generic/generic_clib_64.gdt  
+2025-02-28 14:31:38 DEBUG (PackedDatabase) Unpacking database /nix/store/bxrbnaffmcmcm49a931djnqzljk0ifaj-ghidra-11.2.1/lib/ghidra/Ghidra/Features/Base/data/typeinfo/generic/generic_clib_64.gdt -> /var/tmp/jacobr-ghidra/packed-db-cache/pdbB63052E8/db.1.gbf  
+2025-02-28 14:31:38 DEBUG (PackedDatabaseCache) Cache update completed: /nix/store/bxrbnaffmcmcm49a931djnqzljk0ifaj-ghidra-11.2.1/lib/ghidra/Ghidra/Features/Base/data/typeinfo/generic/generic_clib_64.gdt  
+2025-02-28 14:31:38 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib_64  
+2025-02-28 14:31:38 INFO  (ExternalSymbolResolverAnalyzer) Resolving External Symbols of [/babys-first] - 9 unresolved symbols, no external libraries configured - skipping  
+2025-02-28 14:31:40 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ASCII Strings                              1.587 secs
+    Apply Data Archives                        0.530 secs
+    Call Convention ID                         0.004 secs
+    Call-Fixup Installer                       0.005 secs
+    Create Address Tables                      0.012 secs
+    Create Function                            0.007 secs
+    DWARF                                      0.017 secs
+    Data Reference                             0.009 secs
+    Decompiler Switch Analysis                 0.043 secs
+    Decompiler Switch Analysis - One Time      0.961 secs
+    Demangler GNU                              0.119 secs
+    Disassemble Entry Points                   0.136 secs
+    ELF Scalar Operand References              0.018 secs
+    Embedded Media                             0.035 secs
+    External Entry References                  0.001 secs
+    External Symbol Resolver                   0.003 secs
+    Function ID                                0.065 secs
+    Function Start Search                      0.054 secs
+    Function Start Search After Code           0.003 secs
+    Function Start Search After Data           0.002 secs
+    GCC Exception Handlers                     0.085 secs
+    Non-Returning Functions - Discovered       0.003 secs
+    Non-Returning Functions - Known            0.007 secs
+    Reference                                  0.032 secs
+    Shared Return Calls                        0.014 secs
+    Stack                                      0.150 secs
+    Subroutine References                      0.007 secs
+    Subroutine References - One Time           0.000 secs
+    x86 Constant Reference Analyzer            0.317 secs
+-----------------------------------------------------
+     Total Time   4 secs
+-----------------------------------------------------
+  
+2025-02-28 14:31:40 DEBUG (ToolTaskManager) Start: Auto Analysis  
+2025-02-28 14:31:40 DEBUG (ToolTaskManager) Completed: Auto Analysis (0.0 secs)  
+2025-02-28 14:31:40 DEBUG (ToolTaskManager) Task Completed: Auto Analysis (4.414 secs)  
+2025-02-28 14:31:40 DEBUG (ToolTaskManager) Background processing complete (4.419 secs)  
+2025-02-28 14:32:20 INFO  (RecoveryMgr) Fri Feb 28 14:32:20 MST 2025 Recovery snapshot created: /home/jacobr/Code/rev-engineering/babys-first.rep/idata/00/~00000000.db/snapshotA.grf  
