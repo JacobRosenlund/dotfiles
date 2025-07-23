@@ -1,53 +1,135 @@
 {
+  "layer": "top",
   "position": "top",
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["hyprland/window"],
-  "modules-right": ["network", "pulseaudio", "battery", "clock", "bluetooth"],
+  "height": 34,
+  "spacing": 16,
 
-  "network": {
-    "format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
-    "format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰤭  </span> Disconnected",
-    "format-linked": "{ifname} (No IP) ",
-    "format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
-    "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
+  "modules-left": [
+    "group/hardware",
+    "tray",
+  ],
+
+  "modules-center": [
+    "hyprland/workspaces",
+  ],
+
+  "modules-right": [
+    "group/system",
+    "group/power",
+  ],
+
+  "group/hardware": {
+    "orientation": "horizontal",
+    "modules": [ "cpu", "memory", "custom/temperature", "battery" ],
   },
 
-  "pulseaudio": {
-      "format": "{icon}  {volume}%",
-      "format-muted": "",
-      "format-icons": {
-          "default": ["", "", " "]
-      },
-      "on-click": "pavucontrol",
+  "group/system": {
+    "orientation": "horizontal",
+    "modules": [ "network", "bluetooth", "pulseaudio", "backlight", "clock" ],
   },
 
+  "group/power": {
+    "orientation": "horizontal",
+    "modules": [ "custom/lock", "custom/reboot", "custom/power" ]
+  },
+
+  "cpu": {
+    "interval": 5,
+    "format": "{usage}%",
+  },
+  "memory": {
+    "interval": 5,
+    "format": "{percentage}%",
+    "tooltip": true,
+    "tooltip-format": "Memory: {used:0.2f}G/{total:0.2f}G",
+  },
+  "custom/temperature": {
+    "interval": 5,
+    "exec": "sensors | awk '/^Package/ {print int($4)}'",
+    "interval": 5,
+    "format": "{}C",
+    "tooltip": true,
+    "tooltip-format": "CPU Temp: {}C",
+  },
   "battery": {
+    "interval": 1,
     "states": {
       "warning": 30,
-      "critical": 15
+      "critical": 15,
     },
-    "format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
-    "format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
-    "format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
-    "format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
-    "format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
-    "format-icons": ["", "", "", "", ""],
-    "tooltip-format": "{time}"
+    "format": "{icon}{capacity}%",
+    "format-charging": "󱐋{capacity}%",
+    "format-icons": ["󰂎", "󰁼", "󰁿", "󰂁", "󰁹"],
   },
 
-  "clock": {
-    "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+  "hyprland/workspaces": {
+    "disable-scroll": false,
+    "all-outputs": true,
+    "persistent-workspaces": {"*":[1,2,3]},
   },
 
+  "network": {
+    "interval": 1,
+    "format-wifi": "󰤨",
+    "format-disconnected": "󰀨",
+    "tooltip": true,
+    "tooltip-format": " {bandwidthDownBytes} |  {bandwidthUpBytes}",
+    "on-click": "python ~/.config/eww/scripts/utils/toggle.py network",
+  },
   "bluetooth": {
+    "format": "",
+    "format-connected": "",
+    "format-connected-battery": "",
+    "tooltip": true,
+    "tooltip-format": "{status} | {device_battery_percentage}%",
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰸈",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "󰖀", "󰕾"],
+    },
+  },
+  "backlight": {
     "format": "{icon}",
-    "format-disabled": "<span size='13000' foreground='#6B6B6B'>󰂲</span>",
-    "format-off": "<span size='13000' foreground='#6B6B6B'>󰂲</span>",
-    "format-on": "<span size='13000' foreground='#a6e3a1'>󰂯</span>",
-    "format-connected": "<span size='13000' foreground='#0082FC'>󰂱</span>",
-    "on-click": "blueman-manager"
-  }
+    "tooltip": true,
+    "tooltip-format": "{percent}%",
+    "format-icons": [
+      "<span color='#5A5A5A'>󰃞</span>",
+      "<span color='#A9A9A9'>󰃟</span>",
+      "<span color='#FFFF66'>󰃝</span>",
+      "<span color='#FFD700'>󰃠</span>",
+    ],
+  },
+  "clock": {
+    "interval": 1,
+    "format": " {:%H:%M}",
+    "tooltip": true,
+    "tooltip-format": "{:L%m/%d/%Y, %A}",
+  },
+
+  "custom/lock": {
+    "format": "<span color='#FFFFFF'></span>",
+    "on-click": "hyprlock",
+    "tooltip": true,
+    "tooltip-format": "Lock",
+  },
+  "custom/reboot": {
+    "format": "<span color='#FFD700'></span>",
+    "on-click": "systemctl reboot",
+    "tooltip": true,
+    "tooltip-format": "Reboot",
+  },
+  "custom/power": {
+    "format": "<span color='#FF4040'></span>",
+    "on-click": "systemctl poweroff",
+    "tooltip": true,
+    "tooltip-format": "Power",
+  },
 }
