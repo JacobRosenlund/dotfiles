@@ -1,0 +1,9 @@
+# GIMP gimp-text-tool options
+
+(foreground (color-rgb 0.41993351314056321 0.55489445167099383 0.60747663551401865))
+(palette "Color History")
+(font "CaskaydiaCove Nerd Font Mono")
+(font-size 512)
+(justify center)
+
+# end of gimp-text-tool options
