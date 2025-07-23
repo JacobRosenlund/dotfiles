@@ -34,6 +34,7 @@ local plugins = {
       "TmuxNavigateRight",
       "TmuxNavigatePrevious",
     },
+
     keys = {
       { "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
       { "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
@@ -42,6 +43,11 @@ local plugins = {
       { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
     },
   },
+
+  {
+    "elkowar/yuck.vim",
+    lazy = false
+  },
 }
 
-return plugins 
+return plugins
