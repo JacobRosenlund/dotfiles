@@ -1,11 +1,11 @@
 {
   "api": {
     "enable_server": false,
-    "interpreter_path": ""
+    "interpreter_path": "/nix/store/zfb9kdd430rwq2k5x6l0427a3ngx78lf-python3-3.13.5-env/bin/python3"
   },
   "appearance": {
     "grid_striping": false,
-    "hicontrast_dimming_factor": 0.800000011920929,
+    "hicontrast_dimming_factor": 0.8,
     "icon_theme": 2,
     "show_scrollbars": false,
     "text_editor_zoom": 0,
@@ -24,15 +24,15 @@
     "data_collection_prompt": false,
     "env_var_overwrite_warning": false,
     "scaled_3d_models_warning": false,
-    "update_check_prompt": false,
+    "update_check_prompt": true,
     "zone_fill_warning": false
   },
   "environment": {
     "vars": null
   },
   "git": {
-    "authorEmail": "",
-    "authorName": "",
+    "authorEmail": "jakemrosenlund@gmail.com",
+    "authorName": "JacobRosenlund",
     "enableGit": true,
     "repositories": null,
     "updatInterval": 5,
@@ -88,7 +88,7 @@
     "file_history_size": 9,
     "language": "Default",
     "pdf_viewer_name": "",
-    "text_editor": "",
+    "text_editor": "nvim",
     "use_system_pdf_viewer": true,
     "working_dir": ""
   }
