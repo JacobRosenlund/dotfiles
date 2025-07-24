@@ -1,0 +1,19 @@
+gui:
+  mouseEvents: true
+  commitLength:
+    show: true
+  spinner:
+    frames:
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+      - ''
+    rate: 50
+git:
+  mainBranches:
+    - master
+    - main
+  parseEmoji: true
+
