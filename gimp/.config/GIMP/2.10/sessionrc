@@ -101,6 +101,10 @@
     (factory-entry "gimp-curves-tool-dialog")
     (position 185 26)
     (size 448 581))
+(session-info "toplevel"
+    (factory-entry "gimp-preferences-dialog")
+    (position 241 196)
+    (size 956 469))
 
 (hide-docks no)
 (single-window-mode yes)

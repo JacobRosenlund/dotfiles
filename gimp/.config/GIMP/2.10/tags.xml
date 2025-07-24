@@ -247,10 +247,10 @@
   <resource identifier="${mypaint_brushes_dir}/experimental/1pixel.myb" checksum="edc5df19469776f35d08d24f9248c406">
   </resource>
 
-  <resource identifier="${mypaint_brushes_dir}/deevad/2B_pencil.myb" checksum="abaa73df608d192d62bd3a33636cf1ba">
+  <resource identifier="${mypaint_brushes_dir}/ramon/2B_pencil.myb" checksum="7136280b33d2f2cb27c2cfcc96c57ce4">
   </resource>
 
-  <resource identifier="${mypaint_brushes_dir}/ramon/2B_pencil.myb" checksum="7136280b33d2f2cb27c2cfcc96c57ce4">
+  <resource identifier="${mypaint_brushes_dir}/deevad/2B_pencil.myb" checksum="abaa73df608d192d62bd3a33636cf1ba">
   </resource>
 
   <resource identifier="${mypaint_brushes_dir}/deevad/4H_pencil.myb" checksum="2718434e495370fb4d96d217a3c524c2">
@@ -2972,6 +2972,9 @@
   </resource>
 
   <resource identifier="Noto Sans Sundanese Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Sunuwar" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Syloti Nagri" checksum="(null)">

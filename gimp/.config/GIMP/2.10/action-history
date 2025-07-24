@@ -16,6 +16,7 @@
 (history-item "filters-color-to-alpha" 0)
 (history-item "layers-new" 0)
 (history-item "select-all" 0)
-(history-item "filters-hue-chroma" 1)
+(history-item "filters-hue-chroma" 0)
+(history-item "dialogs-preferences" 1)
 
 # end of action-history
