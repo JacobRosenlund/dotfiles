@@ -3,3 +3,4 @@ audacity/.config/audacity/audacity.cfg
 audacity/.config/audacity/pluginsettings.cfg
 calibre/.config/calibre/plugins/Job Spy.json
 cutter/.config/rizin/cutter.ini
+rpi-imager/.config/Raspberry Pi/Imager.conf
