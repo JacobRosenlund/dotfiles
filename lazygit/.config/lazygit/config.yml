@@ -1,7 +1,17 @@
 gui:
+  authorColors: 
+    'JacobRosenlund': '#AA2222'
+  branchColors: {}
   mouseEvents: true
+  theme: 
+    activeBorderColor:
+      - blue
+      - bold
+    selectedLineBgColor:
+      - '#7b97c3'
   commitLength:
     show: true
+  showBottomLine: true
   spinner:
     frames:
       - ''
@@ -10,7 +20,7 @@ gui:
       - ''
       - ''
       - ''
-    rate: 50
+    rate: 75
 git:
   mainBranches:
     - master
