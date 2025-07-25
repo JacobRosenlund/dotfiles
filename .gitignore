@@ -1,10 +1,16 @@
-calibre/.config/calibre/gui.json
+# General Ignore List
+*.pem
+
+# Specific Untracked Files
 audacity/.config/audacity/audacity.cfg
 audacity/.config/audacity/pluginsettings.cfg
+calibre/.config/calibre/gui.json
 calibre/.config/calibre/plugins/Job Spy.json
 cutter/.config/rizin/cutter.ini
-rpi-imager/.config/Raspberry Pi/Imager.conf
 eww/.config/eww/scripts/network_utils/__pycache__/check_network.cpython-313.pyc
 eww/.config/eww/scripts/utils/__pycache__/clamp.cpython-313.pyc
 eww/.config/eww/scripts/utils/__pycache__/clamp.cpython-313.pyc
 eww/.config/eww/scripts/utils/__pycache__/eww_object_generator.cpython-313.pyc
+rpi-imager/.config/Raspberry Pi/Imager.conf
+syncthing/.config/syncthing/syncthing.lock
+syncthing/.config/syncthing/index-v0.14.0.db
