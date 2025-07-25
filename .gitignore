@@ -11,6 +11,7 @@ eww/.config/eww/scripts/network_utils/__pycache__/check_network.cpython-313.pyc
 eww/.config/eww/scripts/utils/__pycache__/clamp.cpython-313.pyc
 eww/.config/eww/scripts/utils/__pycache__/clamp.cpython-313.pyc
 eww/.config/eww/scripts/utils/__pycache__/eww_object_generator.cpython-313.pyc
+kicad/.config/kicad/9.0/kicad.json
 rpi-imager/.config/Raspberry Pi/Imager.conf
-syncthing/.config/syncthing/syncthing.lock
 syncthing/.config/syncthing/index-v0.14.0.db
+syncthing/.config/syncthing/syncthing.lock
