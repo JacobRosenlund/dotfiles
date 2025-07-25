@@ -15,8 +15,8 @@
     (size 1588 853)
     (open-on-exit)
     (aux-info
-        (left-docks-width "352")
-        (right-docks-width "205")
+        (left-docks-width "180")
+        (right-docks-width "202")
         (maximized "no"))
     (gimp-toolbox
         (side left)
@@ -59,7 +59,7 @@
                 (aux-info
                     (show-button-bar "true"))))
         (book
-            (position 434)
+            (position 429)
             (current-page 0)
             (dockable "gimp-layer-list"
                 (tab-style automatic)
@@ -103,8 +103,8 @@
     (size 448 581))
 (session-info "toplevel"
     (factory-entry "gimp-preferences-dialog")
-    (position 241 196)
-    (size 956 469))
+    (position 6 41)
+    (size 1588 495))
 
 (hide-docks no)
 (single-window-mode yes)
