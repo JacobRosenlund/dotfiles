@@ -15,3 +15,4 @@ kicad/.config/kicad/9.0/kicad.json
 rpi-imager/.config/Raspberry Pi/Imager.conf
 syncthing/.config/syncthing/index-v0.14.0.db
 syncthing/.config/syncthing/syncthing.lock
+vlc/.config/vlc/vlc-qt-interface.conf
