@@ -1,24 +1,36 @@
 {
+  "Export ADE activation files": "/home/jacobr/adobe_account_backup_uuid_5414ee64-a1e4-4ac9-987e-f55ec0965542.zip",
+  "Export ADE keys": "/home/jacobr/adobe_uuid_5414ee64-a1e4-4ac9-987e-f55ec0965542.der",
   "about_get_books_msg_again": false,
+  "add a plugin dialog": "/home/jacobr/Downloads/DeDRM_tools_10.0.9",
+  "add books dialog dir": "/home/jacobr/Downloads",
+  "add books dialog dir-last-used-filter-spec-all-files": false,
   "catalogs_to_be_synced": {
     "__class__": "set",
     "__value__": []
   },
+  "change cover dialog": "/home/jacobr/Downloads",
+  "s_r_search_mode": 0,
   "save to disk dialog": "/home/jacobr/Backups/Kindle",
   "sort_history": [
     [
-      "marked",
+      "series",
       true
     ],
     [
-      "timestamp",
-      false
+      "tags",
+      true
+    ],
+    [
+      "title",
+      true
     ],
     [
       "timestamp",
       false
     ]
   ],
+  "systray_msg": true,
   "welcome_wizard_device": "default",
   "welcome_wizard_was_run": true
 }

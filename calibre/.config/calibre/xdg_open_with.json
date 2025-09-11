@@ -1,0 +1,112 @@
+{
+  "entries": {
+    "epub": [
+      {
+        "Categories": "Graphics;",
+        "Comment": "Ebook reader",
+        "Exec": [
+          "koreader",
+          "%u"
+        ],
+        "MimeType": [
+          "",
+          "application/x-tar",
+          "image/tiff",
+          "application/x-cbz",
+          "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "application/xhtml+xml",
+          "application/xml",
+          "application/zip",
+          "application/vnd.palm",
+          "image/svg+xml",
+          "application/x-mobipocket-ebook",
+          "application/fb2",
+          "application/msword",
+          "application/x-chm",
+          "image/jpeg",
+          "text/html",
+          "application/x-fb2",
+          "application/oxps",
+          "image/png",
+          "image/jp2",
+          "application/rtf",
+          "application/epub+zip",
+          "application/pdf",
+          "image/vnd.djvu",
+          "text/plain",
+          "application/vnd.comicbook+tar",
+          "application/vnd.amazon.mobi8-ebook",
+          "application/tcr",
+          "application/x-fb3",
+          "image/jxr",
+          "application/vnd.comicbook+zip",
+          "application/vnd.ms-htmlhelp",
+          "image/x-djvu",
+          "image/x-portable-bitmap",
+          "application/fb3",
+          "image/gif",
+          "image/x-portable-arbitrarymap",
+          "image/vnd.ms-photo",
+          "image/djvu"
+        ],
+        "Name": "KOReader",
+        "Terminal": "false",
+        "Type": "Application",
+        "X-Purism-FormFactor": "Workstation;Mobile;",
+        "desktop_file_path": "/home/jacobr/.nix-profile/share/applications/koreader.desktop",
+        "uuid": "2eb82166-43e1-4f0f-a70d-43a3cd1cb114"
+      }
+    ]
+  },
+  "geometry-of-choose-open-with-program-dialog-geometry": {
+    "frame_geometry": {
+      "height": 500,
+      "width": 669,
+      "x": 450,
+      "y": 136
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 500,
+      "width": 669,
+      "x": 450,
+      "y": 136
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 500,
+      "width": 669,
+      "x": 450,
+      "y": 136
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAHCAAAAiAAABF4AAAJ7AAABwgAAAIgAAAReAAACewAAAAACAAAABkAAAAHCAAAAiAAABF4AAAJ7"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 900,
+        "width": 1600,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "LG Display",
+      "model": "0x02E2",
+      "name": "LVDS-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 900,
+        "width": 1600
+      },
+      "virtual_geometry": {
+        "height": 900,
+        "width": 1600,
+        "x": 0,
+        "y": 0
+      }
+    }
+  }
+}

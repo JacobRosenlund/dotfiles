@@ -2,9 +2,32 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>lineedit_history_choose_library_dialog</key>
+	<array>
+		<string>Comics</string>
+	</array>
+	<key>lineedit_history_store_config_chooser_query</key>
+	<array>
+		<string>deseret</string>
+	</array>
+	<key>lineedit_history_store_search_search_author</key>
+	<array>
+		<string>Russell M. Nelson</string>
+		<string>Leo Marks</string>
+	</array>
 	<key>lineedit_history_store_search_search_title</key>
 	<array>
+		<string>Daily Joy</string>
+		<string>Between Silk and Cyanide</string>
 		<string>Dracula</string>
+	</array>
+	<key>lineedit_history_viewer-search-panel-expression</key>
+	<array>
+		<string>to learn</string>
+		<string>who have knowledge</string>
+		<string>learning does</string>
+		<string>learning</string>
+		<string>library</string>
 	</array>
 </dict>
 </plist>
