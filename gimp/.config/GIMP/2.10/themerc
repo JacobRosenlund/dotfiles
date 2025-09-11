@@ -11,7 +11,7 @@ style "gimp-spin-scale-style"
 
 class "GimpSpinScale" style "gimp-spin-scale-style"
 
-include "/home/jacobr/.config/GIMP/2.10/themes/BlackBlue/gtkrc"
+include "/nix/store/qf9rx04sbd1ybg3qspmrhmhal9bi40lc-gimp-2.10.38/share/gimp/2.0/themes/Dark/gtkrc"
 include "/nix/store/qf9rx04sbd1ybg3qspmrhmhal9bi40lc-gimp-2.10.38/etc/gimp/2.0/gtkrc"
 
 # end of themerc
