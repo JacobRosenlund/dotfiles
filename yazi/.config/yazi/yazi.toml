@@ -17,3 +17,21 @@ run = 'miller "$1"'
 [[plugin.append_previewers]]
 name = "*"
 run = 'piper -- hexyl --border=none --terminal-width=$w "$1"'
+
+[opener]
+play = [
+  { run = 'vlc "$@"', orphan = true, for = "unix" }
+]
+edit = [
+  { run = '$EDITOR "$@"', block = true, for = "unix" },
+]
+open = [
+  { run = 'xdg-open "$@"', desc = "Open" }
+]
+
+[open]
+prepend_rules = [
+]
+append_rules = [
+  { name = "*", use = "edit" }
+]

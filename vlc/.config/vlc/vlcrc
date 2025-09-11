@@ -854,7 +854,7 @@ qt-privacy-ask=0
 #qt-icon-change=1
 
 # Maximum Volume displayed (integer)
-#qt-max-volume=125
+#qt-max-volume=100
 
 # Fullscreen controller mouse sensitivity (integer)
 #qt-fs-sensitivity=3
