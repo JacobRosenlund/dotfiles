@@ -1,4 +1,4 @@
-local plugins = {
+return {
   {
     "stevearc/conform.nvim",
     -- event = 'BufWritePre', -- uncomment for format on save
@@ -13,6 +13,9 @@ local plugins = {
     end,
   },
 
+  -- test new blink
+  -- { import = "nvchad.blink.lazyspec" },
+
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
@@ -22,32 +25,4 @@ local plugins = {
   -- 		},
   -- 	},
   -- },
-
-  -- vim-tmux-navigator
-  {
-    "christoomey/vim-tmux-navigator",
-    lazy = false,
-    cmd = {
-      "TmuxNavigateLeft",
-      "TmuxNavigateDown",
-      "TmuxNavigateUp",
-      "TmuxNavigateRight",
-      "TmuxNavigatePrevious",
-    },
-
-    keys = {
-      { "<c-h>", "<cmd><C-U>TmuxNavigateLeft<cr>" },
-      { "<c-j>", "<cmd><C-U>TmuxNavigateDown<cr>" },
-      { "<c-k>", "<cmd><C-U>TmuxNavigateUp<cr>" },
-      { "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
-      { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
-    },
-  },
-
-  {
-    "elkowar/yuck.vim",
-    lazy = false
-  },
 }
-
-return plugins

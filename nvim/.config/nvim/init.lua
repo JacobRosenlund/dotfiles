@@ -1,4 +1,4 @@
-vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
+vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
 
 -- bootstrap lazy and all plugins
@@ -22,21 +22,6 @@ require("lazy").setup({
     import = "nvchad.plugins",
   },
 
-  {
-    "williamboman/mason.nvim",
-    lazy = false,
-  },
-
-  {
-    "williamboman/mason-lspconfig.nvim",
-    lazy = false,
-  },
-
-  {
-    "neovim/nvim-lspconfig",
-    lazy = false,
-  },
-
   { import = "plugins" },
 }, lazy_config)
 
@@ -45,7 +30,7 @@ dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
 
 require "options"
-require "nvchad.autocmds"
+require "autocmds"
 
 vim.schedule(function()
   require "mappings"
