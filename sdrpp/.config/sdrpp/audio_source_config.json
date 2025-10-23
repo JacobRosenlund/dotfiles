@@ -1,6 +1,7 @@
 {
     "device": "",
     "devices": {
+        "Built-in Audio": null,
         "Built-in Audio Analog Stereo": null
     }
 }

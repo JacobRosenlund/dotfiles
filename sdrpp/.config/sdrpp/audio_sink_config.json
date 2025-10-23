@@ -2,7 +2,9 @@
     "Radio": {
         "device": "",
         "devices": {
-            "Built-in Audio Analog Stereo": 48000
+            "Built-in Audio": 48000,
+            "Built-in Audio Analog Stereo": 48000,
+            "Jake’s Earbuds": 16000
         }
     }
 }
