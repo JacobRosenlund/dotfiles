@@ -2,6 +2,23 @@
   "configured": true,
   "delete_acsm_after_fulfill": false,
   "detailed_logging": false,
-  "list_of_rented_books": [],
+  "list_of_rented_books": [
+    {
+      "book_name": "The Hobbit",
+      "device": "urn:uuid:1afc8c0f-b7cf-4807-bba3-d80c5a6118c7",
+      "loanID": "40030051-5625-4186-992f-6d149a44d153-0000caed",
+      "operatorURL": "https://acsepub.contentreserve.com/fulfillment",
+      "user": "urn:uuid:5414ee64-a1e4-4ac9-987e-f55ec0965542",
+      "validUntil": "2025-10-01T06:52:42Z"
+    },
+    {
+      "book_name": "The Hobbit",
+      "device": "urn:uuid:1afc8c0f-b7cf-4807-bba3-d80c5a6118c7",
+      "loanID": "40030051-5625-4186-992f-6d149a44d153-0000caed",
+      "operatorURL": "https://acsepub.contentreserve.com/fulfillment",
+      "user": "urn:uuid:5414ee64-a1e4-4ac9-987e-f55ec0965542",
+      "validUntil": "2025-10-01T06:52:42Z"
+    }
+  ],
   "notify_fulfillment": true
 }

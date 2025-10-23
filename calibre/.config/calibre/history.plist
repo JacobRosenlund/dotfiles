@@ -4,6 +4,8 @@
 <dict>
 	<key>lineedit_history_choose_library_dialog</key>
 	<array>
+		<string>/home/jacobr/Documents/RachelsLibrary</string>
+		<string>/home/jacobr/Documents/Rachel's Kindle</string>
 		<string>Comics</string>
 	</array>
 	<key>lineedit_history_store_config_chooser_query</key>
@@ -12,11 +14,13 @@
 	</array>
 	<key>lineedit_history_store_search_search_author</key>
 	<array>
+		<string>Alfred Lansing</string>
 		<string>Russell M. Nelson</string>
 		<string>Leo Marks</string>
 	</array>
 	<key>lineedit_history_store_search_search_title</key>
 	<array>
+		<string>Endurance</string>
 		<string>Daily Joy</string>
 		<string>Between Silk and Cyanide</string>
 		<string>Dracula</string>

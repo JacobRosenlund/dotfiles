@@ -1,11 +1,17 @@
 {
   "disabled_plugins": {
     "__class__": "set",
-    "__value__": []
+    "__value__": [
+      "Google",
+      "Amazon.com"
+    ]
   },
   "enabled_plugins": {
     "__class__": "set",
     "__value__": [
+      "DeDRM",
+      "Google Images",
+      "DeACSM",
       "Open Library"
     ]
   },
@@ -16,8 +22,12 @@
     "Count Pages": "/home/jacobr/.config/calibre/plugins/Count Pages.zip",
     "DeACSM": "/home/jacobr/.config/calibre/plugins/DeACSM.zip",
     "DeDRM": "/home/jacobr/.config/calibre/plugins/DeDRM.zip",
+    "Goodreads": "/home/jacobr/.config/calibre/plugins/Goodreads.zip",
     "Job Spy": "/home/jacobr/.config/calibre/plugins/Job Spy.zip",
+    "KFX Input": "/home/jacobr/.config/calibre/plugins/KFX Input.zip",
+    "KOReader Sync": "/home/jacobr/.config/calibre/plugins/KOReader Sync.zip",
     "Kindle hi-res covers": "/home/jacobr/.config/calibre/plugins/Kindle hi-res covers.zip",
+    "OverDrive Libby": "/home/jacobr/.config/calibre/plugins/OverDrive Libby.zip",
     "Reading List": "/home/jacobr/.config/calibre/plugins/Reading List.zip",
     "Save Virtual Libraries To Column GUI": "/home/jacobr/.config/calibre/plugins/Save Virtual Libraries To Column GUI.zip",
     "View Manager": "/home/jacobr/.config/calibre/plugins/View Manager.zip",

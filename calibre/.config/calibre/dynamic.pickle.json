@@ -10,16 +10,30 @@
     "__value__": []
   },
   "change cover dialog": "/home/jacobr/Downloads",
+  "choose library location": "/home/jacobr/Documents/Rachel's Kindle",
+  "confirm_original_polish_again": false,
   "s_r_search_mode": 0,
   "save to disk dialog": "/home/jacobr/Backups/Kindle",
   "sort_history": [
     [
-      "series",
+      "title",
       true
     ],
     [
-      "tags",
+      "timestamp",
+      false
+    ],
+    [
+      "series",
+      false
+    ],
+    [
+      "title",
       true
+    ],
+    [
+      "timestamp",
+      false
     ],
     [
       "title",
