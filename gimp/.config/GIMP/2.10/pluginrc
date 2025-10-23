@@ -445,6 +445,80 @@
          2 0
         (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0) }")
         (proc-arg 13 "image" "Image to print")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/plugin-browser/plugin-browser" 1
+    (proc-def "plug-in-plug-in-details" 1
+         "Display information about plug-ins"
+         "Allows one to browse the plug-in menus system. You can search for plug-in names, sort by name or menu location and you can view a tree representation of the plug-in menus. Can also be of help to find where new plug-ins have installed themselves in the menus."
+         "Andy Thomas"
+         "Andy Thomas"
+         "1999"
+         "_Plug-in Browser"
+         1
+        (menu-path "<Image>/Help/Programming")
+        (icon icon-name -1 "gimp-plugin")
+         ""
+         1 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0) }")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/photocopy/photocopy" 1
+    (proc-def "plug-in-photocopy" 1
+         "Simulate color distortion produced by a copy machine"
+         "Propagates dark values in an image based on each pixel's relative darkness to a neighboring average. The idea behind this filter is to give the look of a photocopied version of the image, with toner transferred based on the relative darkness of a particular region. This is achieved by darkening areas of the image which are measured to be darker than a neighborhood average and setting other pixels to white. In this way, sufficiently large shifts in intensity are darkened to black. The rate at which they are darkened to black is determined by the second pct_black parameter. The mask_radius parameter controls the size of the pixel neighborhood over which the average intensity is computed and then compared to each pixel in the neighborhood to decide whether or not to darken it to black. Large values for mask_radius result in very thick black areas bordering the regions of white and much less detail for black areas everywhere including inside regions of color. Small values result in less toner overall and more detail everywhere. Small values for the pct_black make the blend from the white regions to the black border lines smoother and the toner regions themselves thinner and less noticeable; larger values achieve the opposite effect."
+         "Spencer Kimball"
+         "Bit Specialists, Inc."
+         "2001"
+         "_Photocopy (legacy)..."
+         1
+        (menu-path "<Image>/Filters/Artistic")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         7 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image (unused)")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 3 "mask-radius" "Photocopy mask radius (radius of pixel neighborhood)")
+        (proc-arg 3 "sharpness" "Sharpness (detail level) (0.0 - 1.0)")
+        (proc-arg 3 "pct-black" "Percentage of darkened pixels to set to black (0.0 - 1.0)")
+        (proc-arg 3 "pct-white" "Percentage of non-darkened pixels left white (0.0 - 1.0)")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/pagecurl/pagecurl" 1
+    (proc-def "plug-in-pagecurl" 1
+         "Curl up one of the image corners"
+         "This plug-in creates a pagecurl-effect."
+         "Federico Mena Quintero and Simon Budig"
+         "Federico Mena Quintero and Simon Budig"
+         "July 2004, 1.0"
+         "_Pagecurl..."
+         1
+        (menu-path "<Image>/Filters/Distorts")
+        (icon icon-name -1 "")
+         "RGB*, GRAY*"
+         7 1
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 0 "colors" "FG- and BG-Color (0), Current gradient (1), Current gradient reversed (2)")
+        (proc-arg 0 "edge" "Edge to curl (1-4, clockwise, starting in the lower right edge)")
+        (proc-arg 0 "orientation" "Vertical (0), Horizontal (1)")
+        (proc-arg 0 "shade" "Shade the region under the curl (1) or not (0)")
+        (proc-arg 14 "curl-layer" "The new layer with the curl.")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/nl-filter/nl-filter" 1
+    (proc-def "plug-in-nlfilt" 1
+         "Nonlinear swiss army knife filter"
+         "This is the pnmnlfilt, in gimp's clothing.  See the pnmnlfilt manpage for details."
+         "Graeme W. Gill, gimp 0.99 plug-in by Eric L. Hernes"
+         "Graeme W. Gill, Eric L. Hernes"
+         "1997"
+         "_NL Filter..."
+         1
+        (menu-path "<Image>/Filters/Enhance")
+        (icon icon-name -1 "")
+         "RGB,GRAY"
+         6 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "img" "The Image to Filter")
+        (proc-arg 16 "drw" "The Drawable")
+        (proc-arg 3 "alpha" "The amount of the filter to apply")
+        (proc-arg 3 "radius" "The filter radius")
+        (proc-arg 0 "filter" "The Filter to Run, 0 - alpha trimmed mean; 1 - optimal estimation (alpha controls noise variance); 2 - edge enhancement")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/metadata-viewer/metadata-viewer" 1
     (proc-def "plug-in-metadata-viewer" 1
          "View metadata (Exif, IPTC, XMP)"
@@ -491,6 +565,68 @@
         (proc-arg 13 "image" "Input image (not used)")
         (proc-arg 16 "drawable" "Input drawable")
         (proc-arg 0 "max-p" "{ MINIMIZE (0), MAXIMIZE (1) }")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/map-object/map-object" 1
+    (proc-def "plug-in-map-object" 1
+         "Map the image to an object (plane, sphere, box or cylinder)"
+         "No help yet"
+         "Tom Bech & Federico Mena Quintero"
+         "Tom Bech & Federico Mena Quintero"
+         "Version 1.2.0, July 16 1998"
+         "Map _Object..."
+         1
+        (menu-path "<Image>/Filters/Map")
+        (icon icon-name -1 "")
+         "RGB*"
+         49 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 0 "maptype" "Type of mapping (0=plane,1=sphere,2=box,3=cylinder)")
+        (proc-arg 3 "viewpoint-x" "Position of viewpoint (x,y,z)")
+        (proc-arg 3 "viewpoint-y" "Position of viewpoint (x,y,z)")
+        (proc-arg 3 "viewpoint-z" "Position of viewpoint (x,y,z)")
+        (proc-arg 3 "position-x" "Object position (x,y,z)")
+        (proc-arg 3 "position-y" "Object position (x,y,z)")
+        (proc-arg 3 "position-z" "Object position (x,y,z)")
+        (proc-arg 3 "firstaxis-x" "First axis of object [x,y,z]")
+        (proc-arg 3 "firstaxis-y" "First axis of object [x,y,z]")
+        (proc-arg 3 "firstaxis-z" "First axis of object [x,y,z]")
+        (proc-arg 3 "secondaxis-x" "Second axis of object [x,y,z]")
+        (proc-arg 3 "secondaxis-y" "Second axis of object [x,y,z]")
+        (proc-arg 3 "secondaxis-z" "Second axis of object [x,y,z]")
+        (proc-arg 3 "rotationangle-x" "Rotation about X axis in degrees")
+        (proc-arg 3 "rotationangle-y" "Rotation about Y axis in degrees")
+        (proc-arg 3 "rotationangle-z" "Rotation about Z axis in degrees")
+        (proc-arg 0 "lighttype" "Type of lightsource (0=point,1=directional,2=none)")
+        (proc-arg 10 "lightcolor" "Lightsource color (r,g,b)")
+        (proc-arg 3 "lightposition-x" "Lightsource position (x,y,z)")
+        (proc-arg 3 "lightposition-y" "Lightsource position (x,y,z)")
+        (proc-arg 3 "lightposition-z" "Lightsource position (x,y,z)")
+        (proc-arg 3 "lightdirection-x" "Lightsource direction [x,y,z]")
+        (proc-arg 3 "lightdirection-y" "Lightsource direction [x,y,z]")
+        (proc-arg 3 "lightdirection-z" "Lightsource direction [x,y,z]")
+        (proc-arg 3 "ambient-intensity" "Material ambient intensity (0..1)")
+        (proc-arg 3 "diffuse-intensity" "Material diffuse intensity (0..1)")
+        (proc-arg 3 "diffuse-reflectivity" "Material diffuse reflectivity (0..1)")
+        (proc-arg 3 "specular-reflectivity" "Material specular reflectivity (0..1)")
+        (proc-arg 3 "highlight" "Material highlight (0..->), note: it's exponential")
+        (proc-arg 0 "antialiasing" "Apply antialiasing (TRUE/FALSE)")
+        (proc-arg 0 "tiled" "Tile source image (TRUE/FALSE)")
+        (proc-arg 0 "newimage" "Create a new image (TRUE/FALSE)")
+        (proc-arg 0 "transparentbackground" "Make background transparent (TRUE/FALSE)")
+        (proc-arg 3 "radius" "Sphere/cylinder radius (only used when maptype=1 or 3)")
+        (proc-arg 3 "x-scale" "Box x size (0..->)")
+        (proc-arg 3 "y-scale" "Box y size (0..->)")
+        (proc-arg 3 "z-scale" "Box z size (0..->)")
+        (proc-arg 3 "cylinder-length" "Cylinder length (0..->)")
+        (proc-arg 16 "box-front-drawable" "Box front face (set these to -1 if not used)")
+        (proc-arg 16 "box-back-drawable" "Box back face")
+        (proc-arg 16 "box-top-drawable" "Box top face")
+        (proc-arg 16 "box-bottom-drawable" "Box bottom face")
+        (proc-arg 16 "box-left-drawable" "Box left face")
+        (proc-arg 16 "box-right-drawable" "Box right face")
+        (proc-arg 16 "cyl-top-drawable" "Cylinder top face (set these to -1 if not used)")
+        (proc-arg 16 "cyl-bottom-drawable" "Cylinder bottom face")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/mail/mail" 1
     (proc-def "plug-in-mail-image" 1
          "Send the image by email"
@@ -513,6 +649,43 @@
         (proc-arg 4 "subject" "The subject")
         (proc-arg 4 "comment" "The Comment")
         (proc-arg 0 "encapsulation" "ignored")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/lighting/lighting" 1
+    (proc-def "plug-in-lighting" 1
+         "Apply various lighting effects to an image"
+         "No help yet"
+         "Tom Bech & Federico Mena Quintero"
+         "Tom Bech & Federico Mena Quintero"
+         "Version 0.2.0, March 15 1998"
+         "_Lighting Effects..."
+         1
+        (menu-path "<Image>/Filters/Light and Shadow/Light")
+        (icon icon-name -1 "")
+         "RGB*"
+         24 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable")
+        (proc-arg 16 "bumpdrawable" "Bumpmap drawable (set to 0 if disabled)")
+        (proc-arg 16 "envdrawable" "Environmentmap drawable (set to 0 if disabled)")
+        (proc-arg 0 "dobumpmap" "Enable bumpmapping (TRUE/FALSE)")
+        (proc-arg 0 "doenvmap" "Enable envmapping (TRUE/FALSE)")
+        (proc-arg 0 "bumpmaptype" "Type of mapping (0=linear,1=log, 2=sinusoidal, 3=spherical)")
+        (proc-arg 0 "lighttype" "Type of lightsource (0=point,1=directional,3=spot,4=none)")
+        (proc-arg 10 "lightcolor" "Lightsource color (r,g,b)")
+        (proc-arg 3 "lightposition-x" "Lightsource position (x,y,z)")
+        (proc-arg 3 "lightposition-y" "Lightsource position (x,y,z)")
+        (proc-arg 3 "lightposition-z" "Lightsource position (x,y,z)")
+        (proc-arg 3 "lightdirection-x" "Lightsource direction [x,y,z]")
+        (proc-arg 3 "lightdirection-y" "Lightsource direction [x,y,z]")
+        (proc-arg 3 "lightdirection-z" "Lightsource direction [x,y,z]")
+        (proc-arg 3 "ambient-intensity" "Material ambient intensity (0..1)")
+        (proc-arg 3 "diffuse-intensity" "Material diffuse intensity (0..1)")
+        (proc-arg 3 "diffuse-reflectivity" "Material diffuse reflectivity (0..1)")
+        (proc-arg 3 "specular-reflectivity" "Material specular reflectivity (0..1)")
+        (proc-arg 3 "highlight" "Material highlight (0..->), note: it's exponential")
+        (proc-arg 0 "antialiasing" "Apply antialiasing (TRUE/FALSE)")
+        (proc-arg 0 "newimage" "Create a new image (TRUE/FALSE)")
+        (proc-arg 0 "transparentbackground" "Make background transparent (TRUE/FALSE)")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/jigsaw/jigsaw" 1
     (proc-def "plug-in-jigsaw" 1
          "Add a jigsaw-puzzle pattern to the image"
@@ -708,6 +881,22 @@
         (proc-arg 0 "use-asupsample" "Whether it uses or not adaptive supersampling while rendering (boolean)")
         (proc-arg 0 "asupsample-max-depth" "Max depth for adaptive supersampling")
         (proc-arg 3 "asupsample-threshold" "Threshold for adaptive supersampling")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/goat-exercise/goat-exercise" 1
+    (proc-def "plug-in-goat-exercise" 1
+         "Exercise a goat"
+         "takes a goat for a walk"
+         "Ã˜yvind KolÃ¥s <pippin@gimp.org>"
+         "Ã˜yvind KolÃ¥s <pippin@gimp.org>"
+         "21march 2012"
+         "Goat-e_xercise"
+         1
+        (menu-path "<Image>/Filters")
+        (icon icon-name -1 "")
+         "RGB*, INDEXED*, GRAY*"
+         3 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image (unused)")
+        (proc-arg 16 "drawable" "Input drawable")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/gimpressionist/gimpressionist" 1
     (proc-def "plug-in-gimpressionist" 1
          "Performs various artistic operations"
@@ -799,22 +988,6 @@
         (proc-arg 2 "greeninvert" "Green inversion mode (1: enabled; 0: disabled)")
         (proc-arg 2 "blueinvert" "Green inversion mode (1: enabled; 0: disabled)")
         (proc-arg 0 "ncolors" "Number of Colors for mapping (2<=ncolors<=8192)")))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/goat-exercise/goat-exercise" 1
-    (proc-def "plug-in-goat-exercise" 1
-         "Exercise a goat"
-         "takes a goat for a walk"
-         "Ã˜yvind KolÃ¥s <pippin@gimp.org>"
-         "Ã˜yvind KolÃ¥s <pippin@gimp.org>"
-         "21march 2012"
-         "Goat-e_xercise"
-         1
-        (menu-path "<Image>/Filters")
-        (icon icon-name -1 "")
-         "RGB*, INDEXED*, GRAY*"
-         3 0
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 13 "image" "Input image (unused)")
-        (proc-arg 16 "drawable" "Input drawable")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/flame/flame" 1
     (proc-def "plug-in-flame" 1
          "Create cosmic recursive fractal flames"
@@ -1270,68 +1443,6 @@
         (proc-arg 0 "compression" "Compression type: { NONE (0), LZW (1), PACKBITS (2), DEFLATE (3), JPEG (4), CCITT G3 Fax (5), CCITT G4 Fax (6) }")
         (proc-arg 0 "save-transp-pixels" "Keep the color data masked by an alpha channel intact (do not store premultiplied components)")
         (proc-arg 0 "bigtiff" "Export in BigTIFF variant file format")))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/map-object/map-object" 1
-    (proc-def "plug-in-map-object" 1
-         "Map the image to an object (plane, sphere, box or cylinder)"
-         "No help yet"
-         "Tom Bech & Federico Mena Quintero"
-         "Tom Bech & Federico Mena Quintero"
-         "Version 1.2.0, July 16 1998"
-         "Map _Object..."
-         1
-        (menu-path "<Image>/Filters/Map")
-        (icon icon-name -1 "")
-         "RGB*"
-         49 0
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Input drawable")
-        (proc-arg 0 "maptype" "Type of mapping (0=plane,1=sphere,2=box,3=cylinder)")
-        (proc-arg 3 "viewpoint-x" "Position of viewpoint (x,y,z)")
-        (proc-arg 3 "viewpoint-y" "Position of viewpoint (x,y,z)")
-        (proc-arg 3 "viewpoint-z" "Position of viewpoint (x,y,z)")
-        (proc-arg 3 "position-x" "Object position (x,y,z)")
-        (proc-arg 3 "position-y" "Object position (x,y,z)")
-        (proc-arg 3 "position-z" "Object position (x,y,z)")
-        (proc-arg 3 "firstaxis-x" "First axis of object [x,y,z]")
-        (proc-arg 3 "firstaxis-y" "First axis of object [x,y,z]")
-        (proc-arg 3 "firstaxis-z" "First axis of object [x,y,z]")
-        (proc-arg 3 "secondaxis-x" "Second axis of object [x,y,z]")
-        (proc-arg 3 "secondaxis-y" "Second axis of object [x,y,z]")
-        (proc-arg 3 "secondaxis-z" "Second axis of object [x,y,z]")
-        (proc-arg 3 "rotationangle-x" "Rotation about X axis in degrees")
-        (proc-arg 3 "rotationangle-y" "Rotation about Y axis in degrees")
-        (proc-arg 3 "rotationangle-z" "Rotation about Z axis in degrees")
-        (proc-arg 0 "lighttype" "Type of lightsource (0=point,1=directional,2=none)")
-        (proc-arg 10 "lightcolor" "Lightsource color (r,g,b)")
-        (proc-arg 3 "lightposition-x" "Lightsource position (x,y,z)")
-        (proc-arg 3 "lightposition-y" "Lightsource position (x,y,z)")
-        (proc-arg 3 "lightposition-z" "Lightsource position (x,y,z)")
-        (proc-arg 3 "lightdirection-x" "Lightsource direction [x,y,z]")
-        (proc-arg 3 "lightdirection-y" "Lightsource direction [x,y,z]")
-        (proc-arg 3 "lightdirection-z" "Lightsource direction [x,y,z]")
-        (proc-arg 3 "ambient-intensity" "Material ambient intensity (0..1)")
-        (proc-arg 3 "diffuse-intensity" "Material diffuse intensity (0..1)")
-        (proc-arg 3 "diffuse-reflectivity" "Material diffuse reflectivity (0..1)")
-        (proc-arg 3 "specular-reflectivity" "Material specular reflectivity (0..1)")
-        (proc-arg 3 "highlight" "Material highlight (0..->), note: it's exponential")
-        (proc-arg 0 "antialiasing" "Apply antialiasing (TRUE/FALSE)")
-        (proc-arg 0 "tiled" "Tile source image (TRUE/FALSE)")
-        (proc-arg 0 "newimage" "Create a new image (TRUE/FALSE)")
-        (proc-arg 0 "transparentbackground" "Make background transparent (TRUE/FALSE)")
-        (proc-arg 3 "radius" "Sphere/cylinder radius (only used when maptype=1 or 3)")
-        (proc-arg 3 "x-scale" "Box x size (0..->)")
-        (proc-arg 3 "y-scale" "Box y size (0..->)")
-        (proc-arg 3 "z-scale" "Box z size (0..->)")
-        (proc-arg 3 "cylinder-length" "Cylinder length (0..->)")
-        (proc-arg 16 "box-front-drawable" "Box front face (set these to -1 if not used)")
-        (proc-arg 16 "box-back-drawable" "Box back face")
-        (proc-arg 16 "box-top-drawable" "Box top face")
-        (proc-arg 16 "box-bottom-drawable" "Box bottom face")
-        (proc-arg 16 "box-left-drawable" "Box left face")
-        (proc-arg 16 "box-right-drawable" "Box right face")
-        (proc-arg 16 "cyl-top-drawable" "Cylinder top face (set these to -1 if not used)")
-        (proc-arg 16 "cyl-bottom-drawable" "Cylinder bottom face")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/file-tga/file-tga" 1
     (proc-def "file-tga-load" 1
          "Loads files of Targa file format"
@@ -1494,40 +1605,6 @@
         (proc-arg 4 "filename" "The name of the file to export the image in")
         (proc-arg 4 "raw-filename" "The name of the file to export the image in")
         (proc-arg 0 "compression" "Compression level (0 = none, 1 = RLE, 2 = ARLE)")))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/plugin-browser/plugin-browser" 1
-    (proc-def "plug-in-plug-in-details" 1
-         "Display information about plug-ins"
-         "Allows one to browse the plug-in menus system. You can search for plug-in names, sort by name or menu location and you can view a tree representation of the plug-in menus. Can also be of help to find where new plug-ins have installed themselves in the menus."
-         "Andy Thomas"
-         "Andy Thomas"
-         "1999"
-         "_Plug-in Browser"
-         1
-        (menu-path "<Image>/Help/Programming")
-        (icon icon-name -1 "gimp-plugin")
-         ""
-         1 0
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0) }")))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/photocopy/photocopy" 1
-    (proc-def "plug-in-photocopy" 1
-         "Simulate color distortion produced by a copy machine"
-         "Propagates dark values in an image based on each pixel's relative darkness to a neighboring average. The idea behind this filter is to give the look of a photocopied version of the image, with toner transferred based on the relative darkness of a particular region. This is achieved by darkening areas of the image which are measured to be darker than a neighborhood average and setting other pixels to white. In this way, sufficiently large shifts in intensity are darkened to black. The rate at which they are darkened to black is determined by the second pct_black parameter. The mask_radius parameter controls the size of the pixel neighborhood over which the average intensity is computed and then compared to each pixel in the neighborhood to decide whether or not to darken it to black. Large values for mask_radius result in very thick black areas bordering the regions of white and much less detail for black areas everywhere including inside regions of color. Small values result in less toner overall and more detail everywhere. Small values for the pct_black make the blend from the white regions to the black border lines smoother and the toner regions themselves thinner and less noticeable; larger values achieve the opposite effect."
-         "Spencer Kimball"
-         "Bit Specialists, Inc."
-         "2001"
-         "_Photocopy (legacy)..."
-         1
-        (menu-path "<Image>/Filters/Artistic")
-        (icon icon-name -1 "")
-         "RGB*, GRAY*"
-         7 0
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 13 "image" "Input image (unused)")
-        (proc-arg 16 "drawable" "Input drawable")
-        (proc-arg 3 "mask-radius" "Photocopy mask radius (radius of pixel neighborhood)")
-        (proc-arg 3 "sharpness" "Sharpness (detail level) (0.0 - 1.0)")
-        (proc-arg 3 "pct-black" "Percentage of darkened pixels to set to black (0.0 - 1.0)")
-        (proc-arg 3 "pct-white" "Percentage of non-darkened pixels left white (0.0 - 1.0)")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/file-raw-placeholder/file-raw-placeholder" 1
     (proc-def "file-raw-placeholder-canon-load" 1
          "Load files in the Canon raw formats via raw-placeholder"
@@ -2624,27 +2701,6 @@
         (proc-arg 16 "drawable" "Drawable to export")
         (proc-arg 4 "filename" "The name of the file to export the image in")
         (proc-arg 4 "raw-filename" "The name of the file to export the image in")))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/pagecurl/pagecurl" 1
-    (proc-def "plug-in-pagecurl" 1
-         "Curl up one of the image corners"
-         "This plug-in creates a pagecurl-effect."
-         "Federico Mena Quintero and Simon Budig"
-         "Federico Mena Quintero and Simon Budig"
-         "July 2004, 1.0"
-         "_Pagecurl..."
-         1
-        (menu-path "<Image>/Filters/Distorts")
-        (icon icon-name -1 "")
-         "RGB*, GRAY*"
-         7 1
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Input drawable")
-        (proc-arg 0 "colors" "FG- and BG-Color (0), Current gradient (1), Current gradient reversed (2)")
-        (proc-arg 0 "edge" "Edge to curl (1-4, clockwise, starting in the lower right edge)")
-        (proc-arg 0 "orientation" "Vertical (0), Horizontal (1)")
-        (proc-arg 0 "shade" "Shade the region under the curl (1) or not (0)")
-        (proc-arg 14 "curl-layer" "The new layer with the curl.")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/file-pdf-save/file-pdf-save" 1
     (proc-def "file-pdf-save" 1
          "Save files in PDF format"
@@ -2845,6 +2901,169 @@
         (proc-arg 16 "drawable" "Drawable to export")
         (proc-arg 4 "filename" "The name of the file to export the image in")
         (proc-arg 4 "raw-filename" "The name entered")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-pat/file-pat" 1
+    (proc-def "file-pat-save" 1
+         "Exports Gimp pattern file (.PAT)"
+         "New Gimp patterns can be created by exporting them in the appropriate place with this plug-in."
+         "Tim Newsome"
+         "Tim Newsome"
+         "1997"
+         "GIMP pattern"
+         0
+        (icon icon-name -1 "gimp-pattern")
+        (save-proc
+            (extensions "pat")
+            (mime-types "image/x-gimp-pat")
+            (handles-uri))
+         "RGB*, GRAY*, INDEXED*"
+         6 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Drawable to export")
+        (proc-arg 4 "uri" "The URI of the file to export the image in")
+        (proc-arg 4 "raw-uri" "The URI of the file to export the image in")
+        (proc-arg 4 "description" "Short description of the pattern")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-mng/file-mng" 1
+    (proc-def "file-mng-save" 1
+         "Saves images in the MNG file format"
+         "This plug-in saves images in the Multiple-image Network Graphics (MNG) format which can be used as a replacement for animated GIFs, and more."
+         "Mukund Sivaraman <muks@mukund.org>"
+         "Mukund Sivaraman <muks@mukund.org>"
+         "November 19, 2002"
+         "MNG animation"
+         0
+        (icon icon-name -1 "")
+        (save-proc
+            (extensions "mng")
+            (mime-types "image/x-mng"))
+         "RGB*,GRAY*,INDEXED*"
+         17 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Drawable to save")
+        (proc-arg 4 "filename" "The name of the file to save the image in")
+        (proc-arg 4 "raw-filename" "The name of the file to save the image in")
+        (proc-arg 0 "interlace" "Use interlacing")
+        (proc-arg 0 "compression" "PNG deflate compression level (0 - 9)")
+        (proc-arg 3 "quality" "JPEG quality factor (0.00 - 1.00)")
+        (proc-arg 3 "smoothing" "JPEG smoothing factor (0.00 - 1.00)")
+        (proc-arg 0 "loop" "(ANIMATED MNG) Loop infinitely")
+        (proc-arg 0 "default-delay" "(ANIMATED MNG) Default delay between frames in milliseconds")
+        (proc-arg 0 "default-chunks" "(ANIMATED MNG) Default chunks type (0 = PNG + Delta PNG; 1 = JNG + Delta PNG; 2 = All PNG; 3 = All JNG)")
+        (proc-arg 0 "default-dispose" "(ANIMATED MNG) Default dispose type (0 = combine; 1 = replace)")
+        (proc-arg 0 "bkgd" "Write bKGD (background color) chunk")
+        (proc-arg 0 "gama" "Write gAMA (gamma) chunk")
+        (proc-arg 0 "phys" "Write pHYs (image resolution) chunk")
+        (proc-arg 0 "time" "Write tIME (creation time) chunk")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-jpegxl/file-jpegxl" 1
+    (proc-def "file-jpegxl-load" 1
+         "Loads files in the JPEG XL file format"
+         "Loads files in the JPEG XL file format"
+         "Daniel Novomesky"
+         "(C) 2022 Daniel Novomesky"
+         "2022"
+         "JPEG XL image"
+         0
+        (icon icon-name -1 "")
+        (load-proc
+            (extensions "jxl")
+            (magics "0,string,ÿ\n,0,string,\\000\\000\\000\fJXL\\040\\015\\012‡\\012")
+            (priority 100)
+            (mime-types "image/jxl")
+            (priority 100))
+         ""
+         3 1
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 4 "filename" "The name of the file to load")
+        (proc-arg 4 "raw-filename" "The name of the file to load")
+        (proc-arg 13 "image" "Output image"))
+    (proc-def "file-jpegxl-save" 1
+         "Saves files in the JPEG XL file format"
+         "Saves files in the JPEG XL file format"
+         "Daniel Novomesky"
+         "(C) 2022 Daniel Novomesky"
+         "2022"
+         "JPEG XL image"
+         0
+        (icon icon-name -1 "")
+        (save-proc
+            (extensions "jxl")
+            (priority 100)
+            (mime-types "image/jxl")
+            (priority 100)
+            (handles-uri))
+         "RGB*, GRAY*"
+         5 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Drawable to save")
+        (proc-arg 4 "filename" "The name of the file to save the image in")
+        (proc-arg 4 "raw-filename" "The name of the file to save the image in")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-jpeg/file-jpeg" 1
+    (proc-def "file-jpeg-load" 1
+         "loads files in the JPEG file format"
+         "loads files in the JPEG file format"
+         "Spencer Kimball, Peter Mattis & others"
+         "Spencer Kimball & Peter Mattis"
+         "1995-2007"
+         "JPEG image"
+         0
+        (icon icon-name -1 "")
+        (load-proc
+            (extensions "jpg,jpeg,jpe")
+            (magics "0,string,ÿØÿ")
+            (mime-types "image/jpeg")
+            (thumb-loader "file-jpeg-load-thumb"))
+         ""
+         3 1
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 4 "filename" "The name of the file to load")
+        (proc-arg 4 "raw-filename" "The name of the file to load")
+        (proc-arg 13 "image" "Output image"))
+    (proc-def "file-jpeg-load-thumb" 1
+         "Loads a thumbnail from a JPEG image"
+         "Loads a thumbnail from a JPEG image (only if it exists)"
+         "Mukund Sivaraman <muks@mukund.org>, Sven Neumann <sven@gimp.org>"
+         "Mukund Sivaraman <muks@mukund.org>, Sven Neumann <sven@gimp.org>"
+         "November 15, 2004"
+         ""
+         0
+        (icon icon-name -1 "")
+         ""
+         2 3
+        (proc-arg 4 "filename" "The name of the file to load")
+        (proc-arg 0 "thumb-size" "Preferred thumbnail size")
+        (proc-arg 13 "image" "Thumbnail image")
+        (proc-arg 0 "image-width" "Width of full-sized image")
+        (proc-arg 0 "image-height" "Height of full-sized image"))
+    (proc-def "file-jpeg-save" 1
+         "saves files in the JPEG file format"
+         "saves files in the lossy, widely supported JPEG format"
+         "Spencer Kimball, Peter Mattis & others"
+         "Spencer Kimball & Peter Mattis"
+         "1995-2007"
+         "JPEG image"
+         0
+        (icon icon-name -1 "")
+        (save-proc
+            (extensions "jpg,jpeg,jpe")
+            (mime-types "image/jpeg"))
+         "RGB*, GRAY*"
+         14 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Drawable to save")
+        (proc-arg 4 "filename" "The name of the file to save the image in")
+        (proc-arg 4 "raw-filename" "The name of the file to save the image in")
+        (proc-arg 3 "quality" "Quality of saved image (0 <= quality <= 1)")
+        (proc-arg 3 "smoothing" "Smoothing factor for saved image (0 <= smoothing <= 1)")
+        (proc-arg 0 "optimize" "Use optimized tables during Huffman coding (0/1)")
+        (proc-arg 0 "progressive" "Create progressive JPEG images (0/1)")
+        (proc-arg 4 "comment" "Image comment")
+        (proc-arg 0 "subsmp" "Sub-sampling type { 0, 1, 2, 3 } 0 == 4:2:0 (chroma quartered), 1 == 4:2:2 Horizontal (chroma halved), 2 == 4:4:4 (best quality), 3 == 4:2:2 Vertical (chroma halved)")
+        (proc-arg 0 "baseline" "Force creation of a baseline JPEG (non-baseline JPEGs can't be read by all decoders) (0/1)")
+        (proc-arg 0 "restart" "Interval of restart markers (in MCU rows, 0 = no restart markers)")
+        (proc-arg 0 "dct" "DCT method to use { INTEGER (0), FIXED (1), FLOAT (2) }")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/file-jp2-load/file-jp2-load" 1
     (proc-def "file-jp2-load" 1
          "Loads JPEG 2000 images."
@@ -2940,6 +3159,27 @@
         (proc-arg 16 "drawable" "Drawable to save")
         (proc-arg 4 "filename" "The name of the file to save the image in")
         (proc-arg 4 "raw-filename" "The name entered")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-html-table/file-html-table" 1
+    (proc-def "file-gtm-save" 1
+         "GIMP Table Magic"
+         "Allows you to draw an HTML table in GIMP. See help for more info."
+         "Daniel Dunbar"
+         "Daniel Dunbar"
+         "1998"
+         "HTML table"
+         0
+        (icon icon-name -1 "")
+        (save-proc
+            (extensions "html,htm")
+            (mime-types "text/html")
+            (handles-uri))
+         "RGB*, GRAY*, INDEXED*"
+         5 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Drawable to export")
+        (proc-arg 4 "filename" "The name of the file to export the image in")
+        (proc-arg 4 "raw-filename" "The name of the file to export the image in")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/file-heif/file-heif" 1
     (has-init))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/file-header/file-header" 1
@@ -3179,6 +3419,61 @@
         (proc-arg 4 "raw-uri" "The URI of the file to export the image in")
         (proc-arg 0 "spacing" "Spacing of the brush")
         (proc-arg 4 "description" "Short description of the brush")))
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-fli/file-fli" 1
+    (proc-def "file-fli-load" 1
+         "load FLI-movies"
+         "This is an experimantal plug-in to handle FLI movies"
+         "Jens Ch. Restemeier"
+         "Jens Ch. Restemeier"
+         "1997"
+         "AutoDesk FLIC animation"
+         0
+        (icon icon-name -1 "")
+        (load-proc
+            (extensions "fli,flc")
+            (mime-types "image/x-flic"))
+         ""
+         3 1
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 4 "filename" "The name of the file to load")
+        (proc-arg 4 "raw-filename" "The name entered")
+        (proc-arg 13 "image" "Output image"))
+    (proc-def "file-fli-save" 1
+         "export FLI-movies"
+         "This is an experimantal plug-in to handle FLI movies"
+         "Jens Ch. Restemeier"
+         "Jens Ch. Restemeier"
+         "1997"
+         "AutoDesk FLIC animation"
+         0
+        (icon icon-name -1 "")
+        (save-proc
+            (extensions "fli,flc")
+            (mime-types "image/x-flic"))
+         "INDEXED,GRAY"
+         7 0
+        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
+        (proc-arg 13 "image" "Input image")
+        (proc-arg 16 "drawable" "Input drawable (unused)")
+        (proc-arg 4 "filename" "The name of the file to export")
+        (proc-arg 4 "raw-filename" "The name entered")
+        (proc-arg 0 "from-frame" "Export beginning from this frame")
+        (proc-arg 0 "to-frame" "End exporting with this frame"))
+    (proc-def "file-fli-info" 1
+         "Get information about a Fli movie"
+         "This is a experimantal plug-in to handle FLI movies"
+         "Jens Ch. Restemeier"
+         "Jens Ch. Restemeier"
+         "1997"
+         ""
+         0
+        (icon icon-name -1 "")
+         ""
+         1 3
+        (proc-arg 4 "filename" "The name of the file to get info")
+        (proc-arg 0 "width" "Width of one frame")
+        (proc-arg 0 "height" "Height of one frame")
+        (proc-arg 0 "frames" "Number of Frames")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/file-fits/file-fits" 1
     (proc-def "file-fits-load" 1
          "load file of the FITS file format"
@@ -3297,25 +3592,24 @@
         (proc-arg 16 "drawable" "Drawable to save")
         (proc-arg 4 "filename" "The name of the file to save")
         (proc-arg 4 "raw-filename" "The name of the file to save")))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/nl-filter/nl-filter" 1
-    (proc-def "plug-in-nlfilt" 1
-         "Nonlinear swiss army knife filter"
-         "This is the pnmnlfilt, in gimp's clothing.  See the pnmnlfilt manpage for details."
-         "Graeme W. Gill, gimp 0.99 plug-in by Eric L. Hernes"
-         "Graeme W. Gill, Eric L. Hernes"
-         "1997"
-         "_NL Filter..."
-         1
-        (menu-path "<Image>/Filters/Enhance")
+(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-desktop-link/file-desktop-link" 1
+    (proc-def "file-desktop-link-load" 1
+         "Follows a link to an image in a .desktop file"
+         "Opens a .desktop file and if it is a link, it asks GIMP to open the file the link points to."
+         "Sven Neumann"
+         "Sven Neumann"
+         "2006"
+         "Desktop Link"
+         0
         (icon icon-name -1 "")
-         "RGB,GRAY"
-         6 0
+        (load-proc
+            (extensions "desktop"))
+         ""
+         3 1
         (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 13 "img" "The Image to Filter")
-        (proc-arg 16 "drw" "The Drawable")
-        (proc-arg 3 "alpha" "The amount of the filter to apply")
-        (proc-arg 3 "radius" "The filter radius")
-        (proc-arg 0 "filter" "The Filter to Run, 0 - alpha trimmed mean; 1 - optimal estimation (alpha controls noise variance); 2 - edge enhancement")))
+        (proc-arg 4 "filename" "The name of the file to load")
+        (proc-arg 4 "raw-filename" "The name entered")
+        (proc-arg 13 "image" "Output image")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/file-dds/file-dds" 1
     (proc-def "file-dds-load" 1
          "Loads files in DDS image format"
@@ -3738,78 +4032,6 @@
         (proc-arg 0 "type" "Filter type { MEDIAN (0), ADAPTIVE (1), RECURSIVE-MEDIAN (2), RECURSIVE-ADAPTIVE (3) }")
         (proc-arg 0 "black" "Black level (-1 to 255)")
         (proc-arg 0 "white" "White level (0 to 256)")))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-desktop-link/file-desktop-link" 1
-    (proc-def "file-desktop-link-load" 1
-         "Follows a link to an image in a .desktop file"
-         "Opens a .desktop file and if it is a link, it asks GIMP to open the file the link points to."
-         "Sven Neumann"
-         "Sven Neumann"
-         "2006"
-         "Desktop Link"
-         0
-        (icon icon-name -1 "")
-        (load-proc
-            (extensions "desktop"))
-         ""
-         3 1
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 4 "filename" "The name of the file to load")
-        (proc-arg 4 "raw-filename" "The name entered")
-        (proc-arg 13 "image" "Output image")))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-pat/file-pat" 1
-    (proc-def "file-pat-save" 1
-         "Exports Gimp pattern file (.PAT)"
-         "New Gimp patterns can be created by exporting them in the appropriate place with this plug-in."
-         "Tim Newsome"
-         "Tim Newsome"
-         "1997"
-         "GIMP pattern"
-         0
-        (icon icon-name -1 "gimp-pattern")
-        (save-proc
-            (extensions "pat")
-            (mime-types "image/x-gimp-pat")
-            (handles-uri))
-         "RGB*, GRAY*, INDEXED*"
-         6 0
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Drawable to export")
-        (proc-arg 4 "uri" "The URI of the file to export the image in")
-        (proc-arg 4 "raw-uri" "The URI of the file to export the image in")
-        (proc-arg 4 "description" "Short description of the pattern")))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-mng/file-mng" 1
-    (proc-def "file-mng-save" 1
-         "Saves images in the MNG file format"
-         "This plug-in saves images in the Multiple-image Network Graphics (MNG) format which can be used as a replacement for animated GIFs, and more."
-         "Mukund Sivaraman <muks@mukund.org>"
-         "Mukund Sivaraman <muks@mukund.org>"
-         "November 19, 2002"
-         "MNG animation"
-         0
-        (icon icon-name -1 "")
-        (save-proc
-            (extensions "mng")
-            (mime-types "image/x-mng"))
-         "RGB*,GRAY*,INDEXED*"
-         17 0
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Drawable to save")
-        (proc-arg 4 "filename" "The name of the file to save the image in")
-        (proc-arg 4 "raw-filename" "The name of the file to save the image in")
-        (proc-arg 0 "interlace" "Use interlacing")
-        (proc-arg 0 "compression" "PNG deflate compression level (0 - 9)")
-        (proc-arg 3 "quality" "JPEG quality factor (0.00 - 1.00)")
-        (proc-arg 3 "smoothing" "JPEG smoothing factor (0.00 - 1.00)")
-        (proc-arg 0 "loop" "(ANIMATED MNG) Loop infinitely")
-        (proc-arg 0 "default-delay" "(ANIMATED MNG) Default delay between frames in milliseconds")
-        (proc-arg 0 "default-chunks" "(ANIMATED MNG) Default chunks type (0 = PNG + Delta PNG; 1 = JNG + Delta PNG; 2 = All PNG; 3 = All JNG)")
-        (proc-arg 0 "default-dispose" "(ANIMATED MNG) Default dispose type (0 = combine; 1 = replace)")
-        (proc-arg 0 "bkgd" "Write bKGD (background color) chunk")
-        (proc-arg 0 "gama" "Write gAMA (gamma) chunk")
-        (proc-arg 0 "phys" "Write pHYs (image resolution) chunk")
-        (proc-arg 0 "time" "Write tIME (creation time) chunk")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/depth-merge/depth-merge" 1
     (proc-def "plug-in-depth-merge" 1
          "Combine two images using depth maps (z-buffers)"
@@ -4100,71 +4322,6 @@
         (proc-arg 13 "image" "Input image")
         (proc-arg 16 "drawable" "Input drawable")
         (proc-arg 0 "num-colors" "Number of colors in the image")))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-html-table/file-html-table" 1
-    (proc-def "file-gtm-save" 1
-         "GIMP Table Magic"
-         "Allows you to draw an HTML table in GIMP. See help for more info."
-         "Daniel Dunbar"
-         "Daniel Dunbar"
-         "1998"
-         "HTML table"
-         0
-        (icon icon-name -1 "")
-        (save-proc
-            (extensions "html,htm")
-            (mime-types "text/html")
-            (handles-uri))
-         "RGB*, GRAY*, INDEXED*"
-         5 0
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0) }")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Drawable to export")
-        (proc-arg 4 "filename" "The name of the file to export the image in")
-        (proc-arg 4 "raw-filename" "The name of the file to export the image in")))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-jpegxl/file-jpegxl" 1
-    (proc-def "file-jpegxl-load" 1
-         "Loads files in the JPEG XL file format"
-         "Loads files in the JPEG XL file format"
-         "Daniel Novomesky"
-         "(C) 2022 Daniel Novomesky"
-         "2022"
-         "JPEG XL image"
-         0
-        (icon icon-name -1 "")
-        (load-proc
-            (extensions "jxl")
-            (magics "0,string,ÿ\n,0,string,\\000\\000\\000\fJXL\\040\\015\\012‡\\012")
-            (priority 100)
-            (mime-types "image/jxl")
-            (priority 100))
-         ""
-         3 1
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 4 "filename" "The name of the file to load")
-        (proc-arg 4 "raw-filename" "The name of the file to load")
-        (proc-arg 13 "image" "Output image"))
-    (proc-def "file-jpegxl-save" 1
-         "Saves files in the JPEG XL file format"
-         "Saves files in the JPEG XL file format"
-         "Daniel Novomesky"
-         "(C) 2022 Daniel Novomesky"
-         "2022"
-         "JPEG XL image"
-         0
-        (icon icon-name -1 "")
-        (save-proc
-            (extensions "jxl")
-            (priority 100)
-            (mime-types "image/jxl")
-            (priority 100)
-            (handles-uri))
-         "RGB*, GRAY*"
-         5 0
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Drawable to save")
-        (proc-arg 4 "filename" "The name of the file to save the image in")
-        (proc-arg 4 "raw-filename" "The name of the file to save the image in")))
 (plug-in-def "${gimp_plug_in_dir}/plug-ins/cml-explorer/cml-explorer" 1
     (proc-def "plug-in-cml-explorer" 1
          "Create abstract Coupled-Map Lattice patterns"
@@ -4371,162 +4528,5 @@
         (proc-arg 16 "drawable" "Input drawable (not used)")
         (proc-arg 0 "link-after-alignment" "Link the visible layers after alignment { TRUE, FALSE }")
         (proc-arg 0 "use-bottom" "use the bottom layer as the base of alignment { TRUE, FALSE }")))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-fli/file-fli" 1
-    (proc-def "file-fli-load" 1
-         "load FLI-movies"
-         "This is an experimantal plug-in to handle FLI movies"
-         "Jens Ch. Restemeier"
-         "Jens Ch. Restemeier"
-         "1997"
-         "AutoDesk FLIC animation"
-         0
-        (icon icon-name -1 "")
-        (load-proc
-            (extensions "fli,flc")
-            (mime-types "image/x-flic"))
-         ""
-         3 1
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 4 "filename" "The name of the file to load")
-        (proc-arg 4 "raw-filename" "The name entered")
-        (proc-arg 13 "image" "Output image"))
-    (proc-def "file-fli-save" 1
-         "export FLI-movies"
-         "This is an experimantal plug-in to handle FLI movies"
-         "Jens Ch. Restemeier"
-         "Jens Ch. Restemeier"
-         "1997"
-         "AutoDesk FLIC animation"
-         0
-        (icon icon-name -1 "")
-        (save-proc
-            (extensions "fli,flc")
-            (mime-types "image/x-flic"))
-         "INDEXED,GRAY"
-         7 0
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Input drawable (unused)")
-        (proc-arg 4 "filename" "The name of the file to export")
-        (proc-arg 4 "raw-filename" "The name entered")
-        (proc-arg 0 "from-frame" "Export beginning from this frame")
-        (proc-arg 0 "to-frame" "End exporting with this frame"))
-    (proc-def "file-fli-info" 1
-         "Get information about a Fli movie"
-         "This is a experimantal plug-in to handle FLI movies"
-         "Jens Ch. Restemeier"
-         "Jens Ch. Restemeier"
-         "1997"
-         ""
-         0
-        (icon icon-name -1 "")
-         ""
-         1 3
-        (proc-arg 4 "filename" "The name of the file to get info")
-        (proc-arg 0 "width" "Width of one frame")
-        (proc-arg 0 "height" "Height of one frame")
-        (proc-arg 0 "frames" "Number of Frames")))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/file-jpeg/file-jpeg" 1
-    (proc-def "file-jpeg-load" 1
-         "loads files in the JPEG file format"
-         "loads files in the JPEG file format"
-         "Spencer Kimball, Peter Mattis & others"
-         "Spencer Kimball & Peter Mattis"
-         "1995-2007"
-         "JPEG image"
-         0
-        (icon icon-name -1 "")
-        (load-proc
-            (extensions "jpg,jpeg,jpe")
-            (magics "0,string,ÿØÿ")
-            (mime-types "image/jpeg")
-            (thumb-loader "file-jpeg-load-thumb"))
-         ""
-         3 1
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 4 "filename" "The name of the file to load")
-        (proc-arg 4 "raw-filename" "The name of the file to load")
-        (proc-arg 13 "image" "Output image"))
-    (proc-def "file-jpeg-load-thumb" 1
-         "Loads a thumbnail from a JPEG image"
-         "Loads a thumbnail from a JPEG image (only if it exists)"
-         "Mukund Sivaraman <muks@mukund.org>, Sven Neumann <sven@gimp.org>"
-         "Mukund Sivaraman <muks@mukund.org>, Sven Neumann <sven@gimp.org>"
-         "November 15, 2004"
-         ""
-         0
-        (icon icon-name -1 "")
-         ""
-         2 3
-        (proc-arg 4 "filename" "The name of the file to load")
-        (proc-arg 0 "thumb-size" "Preferred thumbnail size")
-        (proc-arg 13 "image" "Thumbnail image")
-        (proc-arg 0 "image-width" "Width of full-sized image")
-        (proc-arg 0 "image-height" "Height of full-sized image"))
-    (proc-def "file-jpeg-save" 1
-         "saves files in the JPEG file format"
-         "saves files in the lossy, widely supported JPEG format"
-         "Spencer Kimball, Peter Mattis & others"
-         "Spencer Kimball & Peter Mattis"
-         "1995-2007"
-         "JPEG image"
-         0
-        (icon icon-name -1 "")
-        (save-proc
-            (extensions "jpg,jpeg,jpe")
-            (mime-types "image/jpeg"))
-         "RGB*, GRAY*"
-         14 0
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Drawable to save")
-        (proc-arg 4 "filename" "The name of the file to save the image in")
-        (proc-arg 4 "raw-filename" "The name of the file to save the image in")
-        (proc-arg 3 "quality" "Quality of saved image (0 <= quality <= 1)")
-        (proc-arg 3 "smoothing" "Smoothing factor for saved image (0 <= smoothing <= 1)")
-        (proc-arg 0 "optimize" "Use optimized tables during Huffman coding (0/1)")
-        (proc-arg 0 "progressive" "Create progressive JPEG images (0/1)")
-        (proc-arg 4 "comment" "Image comment")
-        (proc-arg 0 "subsmp" "Sub-sampling type { 0, 1, 2, 3 } 0 == 4:2:0 (chroma quartered), 1 == 4:2:2 Horizontal (chroma halved), 2 == 4:4:4 (best quality), 3 == 4:2:2 Vertical (chroma halved)")
-        (proc-arg 0 "baseline" "Force creation of a baseline JPEG (non-baseline JPEGs can't be read by all decoders) (0/1)")
-        (proc-arg 0 "restart" "Interval of restart markers (in MCU rows, 0 = no restart markers)")
-        (proc-arg 0 "dct" "DCT method to use { INTEGER (0), FIXED (1), FLOAT (2) }")))
-(plug-in-def "${gimp_plug_in_dir}/plug-ins/lighting/lighting" 1
-    (proc-def "plug-in-lighting" 1
-         "Apply various lighting effects to an image"
-         "No help yet"
-         "Tom Bech & Federico Mena Quintero"
-         "Tom Bech & Federico Mena Quintero"
-         "Version 0.2.0, March 15 1998"
-         "_Lighting Effects..."
-         1
-        (menu-path "<Image>/Filters/Light and Shadow/Light")
-        (icon icon-name -1 "")
-         "RGB*"
-         24 0
-        (proc-arg 0 "run-mode" "The run mode { RUN-INTERACTIVE (0), RUN-NONINTERACTIVE (1) }")
-        (proc-arg 13 "image" "Input image")
-        (proc-arg 16 "drawable" "Input drawable")
-        (proc-arg 16 "bumpdrawable" "Bumpmap drawable (set to 0 if disabled)")
-        (proc-arg 16 "envdrawable" "Environmentmap drawable (set to 0 if disabled)")
-        (proc-arg 0 "dobumpmap" "Enable bumpmapping (TRUE/FALSE)")
-        (proc-arg 0 "doenvmap" "Enable envmapping (TRUE/FALSE)")
-        (proc-arg 0 "bumpmaptype" "Type of mapping (0=linear,1=log, 2=sinusoidal, 3=spherical)")
-        (proc-arg 0 "lighttype" "Type of lightsource (0=point,1=directional,3=spot,4=none)")
-        (proc-arg 10 "lightcolor" "Lightsource color (r,g,b)")
-        (proc-arg 3 "lightposition-x" "Lightsource position (x,y,z)")
-        (proc-arg 3 "lightposition-y" "Lightsource position (x,y,z)")
-        (proc-arg 3 "lightposition-z" "Lightsource position (x,y,z)")
-        (proc-arg 3 "lightdirection-x" "Lightsource direction [x,y,z]")
-        (proc-arg 3 "lightdirection-y" "Lightsource direction [x,y,z]")
-        (proc-arg 3 "lightdirection-z" "Lightsource direction [x,y,z]")
-        (proc-arg 3 "ambient-intensity" "Material ambient intensity (0..1)")
-        (proc-arg 3 "diffuse-intensity" "Material diffuse intensity (0..1)")
-        (proc-arg 3 "diffuse-reflectivity" "Material diffuse reflectivity (0..1)")
-        (proc-arg 3 "specular-reflectivity" "Material specular reflectivity (0..1)")
-        (proc-arg 3 "highlight" "Material highlight (0..->), note: it's exponential")
-        (proc-arg 0 "antialiasing" "Apply antialiasing (TRUE/FALSE)")
-        (proc-arg 0 "newimage" "Create a new image (TRUE/FALSE)")
-        (proc-arg 0 "transparentbackground" "Make background transparent (TRUE/FALSE)")))
 
 # end of pluginrc

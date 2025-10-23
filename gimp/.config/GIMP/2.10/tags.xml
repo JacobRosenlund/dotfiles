@@ -949,7 +949,7 @@
   <resource identifier="${gimp_data_dir}/patterns/Wood/wood1.pat" checksum="0c055f250ddbccc1b32d05f8c0ad7012">
   </resource>
 
-  <resource identifier="gimp-gradient-custom" checksum="4a878c6cfae0b0e03c0834723daadf92">
+  <resource identifier="gimp-gradient-custom" checksum="eae6dfed43351fb14d7f5903f3095587">
   </resource>
 
   <resource identifier="gimp-gradient-fg-bg-rgb-hardedge" checksum="f3a21fae99695a8feac84cee0ddd716a">
@@ -1180,7 +1180,7 @@
   <resource identifier="${gimp_data_dir}/gradients/Yellow_Orange.ggr" checksum="428584726006e23e260baa2a7d79f295">
   </resource>
 
-  <resource identifier="gimp-palette-color-history" checksum="e85820c9ec8561ea422627c9b76fa4fa">
+  <resource identifier="gimp-palette-color-history" checksum="a5db8f6eb8bdc72b8aca3c82fd08f371">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Bears.gpl" checksum="e82e818c20ac12bdd21049924ea2d1e7">
@@ -1477,13 +1477,13 @@
   <resource identifier="DejaVu Serif Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="Font Awesome 6 Brands" checksum="(null)">
+  <resource identifier="Font Awesome 7 Brands" checksum="(null)">
   </resource>
 
-  <resource identifier="Font Awesome 6 Free" checksum="(null)">
+  <resource identifier="Font Awesome 7 Free" checksum="(null)">
   </resource>
 
-  <resource identifier="Font Awesome 6 Free Heavy" checksum="(null)">
+  <resource identifier="Font Awesome 7 Free Heavy" checksum="(null)">
   </resource>
 
   <resource identifier="FreeMono" checksum="(null)">
@@ -1520,6 +1520,294 @@
   </resource>
 
   <resource identifier="FreeSerif Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Mono" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Mono Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Mono Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Mono Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Mono Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Mono Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Mono Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Mono Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Mono Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Mono Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Mono Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Mono Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Mono Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Mono Ultra-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Mono Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Mono Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Propo" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Propo Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Propo Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Propo Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Propo Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Propo Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Propo Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Propo Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Propo Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Propo Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Propo Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Propo Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Propo Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Propo Ultra-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Propo Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Propo Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Ultra-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMono Nerd Font Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Mono" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Mono Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Mono Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Mono Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Mono Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Mono Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Mono Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Mono Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Mono Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Mono Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Mono Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Mono Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Mono Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Mono Ultra-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Mono Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Mono Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Propo" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Propo Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Propo Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Propo Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Propo Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Propo Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Propo Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Propo Medium Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Propo Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Propo Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Propo Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Propo Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Propo Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Propo Ultra-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Propo Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Propo Ultra-Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Thin" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Thin Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Ultra-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Ultra-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Ultra-Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="JetBrainsMonoNL Nerd Font Ultra-Light Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Liberation Mono" checksum="(null)">
