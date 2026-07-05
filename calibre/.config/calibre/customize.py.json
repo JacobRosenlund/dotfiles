@@ -10,9 +10,9 @@
     "__class__": "set",
     "__value__": [
       "DeDRM",
-      "Google Images",
       "DeACSM",
-      "Open Library"
+      "Open Library",
+      "Google Images"
     ]
   },
   "filetype_mapping": {},

@@ -3,8 +3,8 @@
   "Export ADE keys": "/home/jacobr/adobe_uuid_5414ee64-a1e4-4ac9-987e-f55ec0965542.der",
   "about_get_books_msg_again": false,
   "add a plugin dialog": "/home/jacobr/Downloads/DeDRM_tools_10.0.9",
-  "add books dialog dir": "/home/jacobr/Downloads",
-  "add books dialog dir-last-used-filter-spec-all-files": false,
+  "add books dialog dir": "/home/jacobr/Audio/Audiobooks/Enders Saga/001 - Enders Game",
+  "add books dialog dir-last-used-filter-spec-all-files": true,
   "catalogs_to_be_synced": {
     "__class__": "set",
     "__value__": []
@@ -26,18 +26,6 @@
     [
       "series",
       false
-    ],
-    [
-      "title",
-      true
-    ],
-    [
-      "timestamp",
-      false
-    ],
-    [
-      "title",
-      true
     ],
     [
       "timestamp",

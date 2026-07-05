@@ -2,12 +2,12 @@
 # 
 # This is your personal gimprc file.  Any variable defined in this file takes
 # precedence over the value defined in the system-wide gimprc:
-# /nix/store/66f9s2r6cfcax6iyf6z7ch18bi71dnfb-gimp-3.0.4/etc/gimp/3.0/gimprc
+# /nix/store/g12514rxkdwdcz7dflj8jxbq3187jk53-gimp-3.0.6/etc/gimp/3.0/gimprc
 # Most values can be set within GIMP by changing some options in the
 # Preferences dialog.
 
 (prev-language "American English")
-(config-version "3.0.4")
+(config-version "3.0.6")
 (color-management
     (mode display)
     (display-profile-from-gdk no)

@@ -114,28 +114,28 @@
   },
   "geometry-of-import-foreign-geometry": {
     "frame_geometry": {
-      "height": 206,
-      "width": 190,
+      "height": 423,
+      "width": 390,
       "x": 0,
       "y": 0
     },
     "full_screened": false,
     "geometry": {
-      "height": 206,
-      "width": 190,
+      "height": 423,
+      "width": 390,
       "x": 0,
       "y": 0
     },
     "maximized": true,
     "normal_geometry": {
-      "height": 206,
-      "width": 190,
+      "height": 423,
+      "width": 390,
       "x": 0,
       "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAAAAAAL0AAADNAAAAAAAAAAAAAAC9AAAAzQAAAAACAAAABkAAAAAAAAAAAAAAAL0AAADN"
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAAYUAAAGmAAAAAAAAAAAAAAGFAAABpgAAAAACAAAABkAAAAAAAAAAAAAAAYUAAAGm"
     },
     "screen": {
       "depth": 32,
@@ -165,28 +165,28 @@
   },
   "geometry-of-main_window_geometry": {
     "frame_geometry": {
-      "height": 206,
-      "width": 390,
-      "x": 0,
-      "y": 0
-    },
-    "full_screened": false,
-    "geometry": {
-      "height": 206,
-      "width": 390,
-      "x": 0,
-      "y": 0
-    },
-    "maximized": true,
-    "normal_geometry": {
       "height": 423,
       "width": 790,
       "x": 0,
       "y": 0
     },
+    "full_screened": false,
+    "geometry": {
+      "height": 423,
+      "width": 790,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 422,
+      "width": 392,
+      "x": 0,
+      "y": 0
+    },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAAAAAAYUAAADNAAAAAAAAAAAAAAMVAAABpgAAAAACAAAABkAAAAAAAAAAAAAAAYUAAADN"
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAAxUAAAGmAAAAAAAAAAAAAAGHAAABpQAAAAACAAAABkAAAAAAAAAAAAAAAxUAAAGm"
     },
     "screen": {
       "depth": 32,
@@ -327,7 +327,7 @@
   },
   "main_window_state": {
     "__class__": "bytearray",
-    "__value__": "AAAA/wAAAAD9AAAABAAAAAAAAABGAAAAf/wCAAAABfsAAAAkAGYAaQBsAGUAcwAtAGIAcgBvAHcAcwBlAHIALQBkAG8AYwBrAQAAADkAAAB/AAAAVgD////7AAAAHgB0AG8AYwAtAHYAaQBlAHcAZQByAC0AZABvAGMAawAAAAAA/////wAAAFYA////+wAAACAAdABlAHgAdAAtAHMAZQBhAHIAYwBoAC0AZABvAGMAawAAAAAA/////wAAAG0A////+wAAACAAYwBoAGUAYwBrAHAAbwBpAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAIYA////+wAAACYAcwBhAHYAZQBkAC0AcwBlAGEAcgBjAGgAZQBzAC0AZABvAGMAawAAAAAA/////wAAAc4A////AAAAAQAAADUAAAB//AIAAAAC+wAAABgAcAByAGUAdgBpAGUAdwAtAGQAbwBjAGsBAAAAOQAAAH8AAABKAP////sAAAAaAGwAaQB2AGUALQBjAHMAcwAtAGQAbwBjAGsAAAAAAP////8AAABWAP///wAAAAIAAAAAAAAAAPwBAAAAAfsAAAAeAGMAaABlAGMAawAtAGIAbwBvAGsALQBkAG8AYwBrAAAAAAD/////AAAAkAD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAHABpAG4AcwBwAGUAYwB0AG8AcgAtAGQAbwBjAGsAAAAAAP////8AAAAxAP///wAAAP8AAAB/AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAUAGcAbABvAGIAYQBsAC0AYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABIAdABvAG8AbABzAC0AYgBhAHIBAAABJv////8AAAAAAAAAAAAAABYAcABsAHUAZwBpAG4AcwAtAGIAYQByAAAAAAD/////AAAAAAAAAAA="
+    "__value__": "AAAA/wAAAAD9AAAABAAAAAAAAABGAAABWPwCAAAABfsAAAAkAGYAaQBsAGUAcwAtAGIAcgBvAHcAcwBlAHIALQBkAG8AYwBrAQAAADkAAAFYAAAAVgD////7AAAAHgB0AG8AYwAtAHYAaQBlAHcAZQByAC0AZABvAGMAawAAAAAA/////wAAAFYA////+wAAACAAdABlAHgAdAAtAHMAZQBhAHIAYwBoAC0AZABvAGMAawAAAAAA/////wAAAG0A////+wAAACAAYwBoAGUAYwBrAHAAbwBpAG4AdABzAC0AZABvAGMAawAAAAAA/////wAAAIYA////+wAAACYAcwBhAHYAZQBkAC0AcwBlAGEAcgBjAGgAZQBzAC0AZABvAGMAawAAAAAA/////wAAAc4A////AAAAAQAAADUAAAFY/AIAAAAC+wAAABgAcAByAGUAdgBpAGUAdwAtAGQAbwBjAGsBAAAAOQAAAVgAAABKAP////sAAAAaAGwAaQB2AGUALQBjAHMAcwAtAGQAbwBjAGsAAAAAAP////8AAABWAP///wAAAAIAAAAAAAAAAPwBAAAAAfsAAAAeAGMAaABlAGMAawAtAGIAbwBvAGsALQBkAG8AYwBrAAAAAAD/////AAAAkAD///8AAAADAAAAAAAAAAD8AQAAAAH7AAAAHABpAG4AcwBwAGUAYwB0AG8AcgAtAGQAbwBjAGsAAAAAAP////8AAAAxAP///wAAAo8AAAFYAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAMAAAAUAGcAbABvAGIAYQBsAC0AYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABIAdABvAG8AbABzAC0AYgBhAHIBAAABJv////8AAAAAAAAAAAAAABYAcABsAHUAZwBpAG4AcwAtAGIAYQByAAAAAAD/////AAAAAAAAAAA="
   },
   "recent-books": [
     "/home/jacobr/Calibre Library/Yann Martel/Life of Pi (165)/Life of Pi - Yann Martel.epub",

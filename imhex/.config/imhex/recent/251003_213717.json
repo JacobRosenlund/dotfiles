@@ -1,0 +1,7 @@
+{
+    "baseAddress": 0,
+    "currPage": 0,
+    "displayName": "plex-tree.txt",
+    "path": "/home/jacobr/Documents/plex-tree.txt",
+    "type": "hex.builtin.provider.file"
+}
