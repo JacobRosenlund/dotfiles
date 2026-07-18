@@ -3,19 +3,19 @@
 show_hidden = true
 
 [[plugin.prepend_previewers]]
-name = "*.tar*"
+url = "*.tar*"
 run = 'piper --format=url -- tar tf "$1"'
 
 [[plugin.prepend_previewers]]
-name = "*.md"
+url = "*.md"
 run = 'piper -- CLICOLOR_FORCE=1 glow -w=$w -s=dark "$1"'
 
 [[plugin.prepend_previewers]]
-name = "*.csv"
+url = "*.csv"
 run = 'miller "$1"'
 
 [[plugin.append_previewers]]
-name = "*"
+url = "*"
 run = 'piper -- hexyl --border=none --terminal-width=$w "$1"'
 
 [opener]
@@ -33,5 +33,5 @@ open = [
 prepend_rules = [
 ]
 append_rules = [
-  { name = "*", use = "edit" }
+  { url = "*", use = "edit" }
 ]
